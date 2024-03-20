@@ -1,24 +1,32 @@
 <?php
 
 // Hide Pages
-// add_action('pre_get_posts', 'custom_hide_pages_from_subsite_admin');
+add_action('pre_get_posts', 'custom_hide_pages_from_subsite_admin');
 
-// function custom_hide_pages_from_subsite_admin($query)
-// {
-// 	global $pagenow;
+function custom_hide_pages_from_subsite_admin($query)
+{
+    global $pagenow;
 
-// 	if (is_admin() && $pagenow === 'edit.php' && isset($_GET['post_type']) && $_GET['post_type'] === 'page') {
-// 		$query->set('post__not_in', array(9)); // Replace 1, 2, 3 with the IDs of the pages you want to hide
-// 	}
-// }
-// Hide Pages
-// add_action('pre_get_posts', 'custom_hide_pages_from_subsite_admin');
+    if (is_admin() && $pagenow === 'edit.php' && isset($_GET['post_type']) && $_GET['post_type'] === 'page') {
+        // Array of page slugs to hide
+        $pages_to_hide_slugs = array('admin', 'admin/themes', 'admin/users', 'admin/users/edit-user', 'admin/users/view-user');
 
-// function custom_hide_pages_from_subsite_admin($query)
-// {
-// 	global $pagenow;
+        // Initialize an empty array to store page IDs
+        $pages_to_hide_ids = array();
 
-// 	if (is_admin() && $pagenow === 'edit.php' && isset($_GET['post_type']) && $_GET['post_type'] === 'page') {
-// 		$query->set('post__not_in', array(9)); // Replace 1, 2, 3 with the IDs of the pages you want to hide
-// 	}
-// }
+        // Loop through each slug to get the corresponding page ID
+        foreach ($pages_to_hide_slugs as $slug) {
+            $page = get_page_by_path($slug);
+            if ($page) {
+                $pages_to_hide_ids[] = $page->ID;
+            }
+        }
+
+        // Set the 'post__not_in' parameter in the query to exclude the specified page IDs
+        if (!empty($pages_to_hide_ids)) {
+            $query->set('post__not_in', $pages_to_hide_ids);
+        }
+    }
+}
+
+
