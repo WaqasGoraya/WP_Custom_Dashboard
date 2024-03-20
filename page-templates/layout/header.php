@@ -27,7 +27,7 @@
     // exit;
 
     ?>
-    <div class="container-xxl position-relative bg-container d-flex p-0">
+    <div class="position-relative bg-container d-flex p-0">
         <!-- Content Start -->
         <div class="content">
             <!-- Navbar Start -->

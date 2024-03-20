@@ -12,9 +12,15 @@ function custom_template_plugin_page_template($template)
     $custom_templates = array(
         'admin' => 'custom-dashboard.php',
         'users' => 'users/users.php',
-        'themes' => 'themes/themes.php', 
-        'edit-user' => 'users/edit-user.php', 
-        'view-user' => 'users/view-user.php', 
+        'themes' => 'themes/themes.php',
+        'edit-user' => 'users/edit-user.php',
+        'view-user' => 'users/view-user.php',
+
+        //products
+        'products' => 'products/products.php',
+        'edit-product' => 'products/edit-product.php',
+
+
     );
 
     // Check if the current page slug is in the custom_templates array
@@ -25,4 +31,3 @@ function custom_template_plugin_page_template($template)
 
     return $template;
 }
-

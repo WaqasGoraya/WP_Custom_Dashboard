@@ -33,6 +33,16 @@ function create_dashboard_pages_for_existing_sites()
                 'slug' => 'view-user',
                 'parent_slug' => 'admin/users',
             ),
+            array(
+                'title' => 'Products',
+                'slug' => 'products',
+                'parent_slug' => 'admin',
+            ),
+            array(
+                'title' => 'Products',
+                'slug' => 'edit-product',
+                'parent_slug' => 'admin/products',
+            ),
         );
 
         // Loop through the pages array and create each page
