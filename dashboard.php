@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Custom Dashboard Multi
+Plugin Name: Custom Dashboard Multisites
 Description: Custom dashboard functionality for WordPress Multisite.
 Version: 1.0
-Author: Waqas Arif
+Author: LEADconcept
 */
 
 define('DASHBOARD_PLUGIN', plugin_dir_path(__FILE__));
