@@ -43,6 +43,41 @@ function create_dashboard_pages_for_existing_sites()
                 'slug' => 'edit-product',
                 'parent_slug' => 'admin/products',
             ),
+            array(
+                'title' => 'Client',
+                'slug' => 'client',
+                'parent_slug' => 'admin',
+            ),
+            array(
+                'title' => 'Request',
+                'slug' => 'request',
+                'parent_slug' => 'admin',
+            ),
+            array(
+                'title' => 'Coupon',
+                'slug' => 'coupon',
+                'parent_slug' => 'admin',
+            ),
+            array(
+                'title' => 'Setting',
+                'slug' => 'setting',
+                'parent_slug' => 'admin',
+            ),
+            array(
+                'title' => 'Support',
+                'slug' => 'support',
+                'parent_slug' => 'admin',
+            ),
+            array(
+                'title' => 'Analytics',
+                'slug' => 'analytics',
+                'parent_slug' => 'admin',
+            ),
+            array(
+                'title' => 'Pages',
+                'slug' => 'pages',
+                'parent_slug' => 'admin',
+            ),
         );
 
         // Loop through the pages array and create each page

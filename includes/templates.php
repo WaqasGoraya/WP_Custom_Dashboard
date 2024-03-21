@@ -16,10 +16,30 @@ function custom_template_plugin_page_template($template)
         'edit-user' => 'users/edit-user.php',
         'view-user' => 'users/view-user.php',
 
+        //clinet 
+        'client' => 'client/client.php',
+
         //products
         'products' => 'products/products.php',
         'edit-product' => 'products/edit-product.php',
 
+        //setting
+        'setting' => 'setting/setting.php',
+
+        //pages
+        'pages' => 'pages/pages.php',
+
+        //request
+        'request' => 'request/request.php',
+
+        //support
+        'support' => 'support/support.php',
+
+        //coupon
+        'coupon' => 'coupon/coupon.php',
+
+        //analytics
+        'analytics' => 'analytics/analytics.php',
 
     );
 
