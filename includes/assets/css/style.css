@@ -1,5 +1,6 @@
 /********** Template CSS **********/
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
 :root {
     --primary: #1E1B5E;
     --light: #FAFAFA;
@@ -106,6 +107,7 @@ body {
 .bg-container {
     background: #291e26;
 }
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -181,7 +183,7 @@ body {
     min-height: 100vh;
     background: #291e26;
     transition: 0.5s;
-    padding: 15px;
+    padding: 15px 45px;
 }
 
 /* .sidebar .nav-item {
@@ -207,7 +209,7 @@ body {
 
     .content.open {
         width: 100%;
-        margin-right: 0;
+        margin-right: 25px;
     }
 
     .sidebar .navbar .sidebar-lg-styles .nav-label {
@@ -258,7 +260,8 @@ body {
 /*** Navbar ***/
 .bg-navbar {
     background: #1a1a1a;
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 0 0 16px 16px;
 }
 
 .sidebar .navbar {
@@ -311,7 +314,7 @@ body {
     left: 0;
     top: -20px;
     background: #000;
-    background:radial-gradient(circle at 20px 20px, transparent 20px, #a879d8 21px);
+    background: radial-gradient(circle at 20px 20px, transparent 20px, #a879d8 21px);
     transform: rotate(-90deg)
 }
 
@@ -323,7 +326,7 @@ body {
     left: 0;
     bottom: -20px;
     background: #000;
-    background:radial-gradient(circle at 20px 20px, transparent 20px, #8d4fcc 21px);
+    background: radial-gradient(circle at 20px 20px, transparent 20px, #8d4fcc 21px);
 }
 
 .sidebar .navbar .navbar-nav .nav-link.active {
@@ -554,7 +557,15 @@ body {
 .sales-chart-bg {
     border-radius: 16px;
     background: linear-gradient(134deg, #4E4E4E -16.04%, #333 9.33%, #1A1A1A 32.02%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%);
-    /* filter: drop-shadow(2px 6px 15px rgba(12, 10, 11, 0.80)); */
+    filter: drop-shadow(2px 6px 15px rgba(12, 10, 11, 0.80));
+    /* overflow-y: scroll;
+    height: 80vh; */
+}
+
+.sales-chart-bg::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    display: none;
 }
 
 .sales-chart-bg .text-stat {
@@ -952,3 +963,689 @@ body {
     padding: 0 16px;
     margin: 10px 0;
 }
+
+
+
+
+
+
+
+
+
+/*********************** Client inner page Styling Start ****************************************/
+
+.umala-page .sales-chart-bg {
+    border-radius: 16px;
+    background: linear-gradient(134deg, #4E4E4E -16.04%, #333 9.33%, #1A1A1A 32.02%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%);
+    /* filter: drop-shadow(2px 6px 15px rgba(12, 10, 11, 0.80)); */
+    overflow-y: scroll;
+    height: 80vh;
+}
+
+.top-inner-page-btn button {
+    padding: 3px 20px;
+    background: none;
+    border: 2px solid #472561;
+    border-radius: 10px;
+    color: #948E92;
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.top-inner-page-btn .umala-head {
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+}
+
+.content .top-search {
+    position: relative;
+}
+
+.content .top-search .form-control {
+    background-color: #473F44;
+    border-radius: 24px;
+    padding: 0.375rem 2.5rem !important;
+    color: white;
+    border: none;
+}
+
+.content .top-search i {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    color: white;
+}
+
+.content .top-search .form-control::placeholder {
+    color: #C7C5C6;
+    font-size: 16px;
+}
+
+.content .top-dropdown .btn-drop {
+    border: 2px solid #472561;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.content .top-dropdown .simple-btn {
+    border: none;
+    border-radius: 10px;
+    background: #8F38F3;
+    color: white;
+    padding: 5px 15px;
+}
+
+.dropdown-toggle::before {
+    display: none !important;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+
+.umala-page table {
+    width: 100%;
+    font-size: 14px;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+    white-space: nowrap;
+}
+
+.umala-page table tr::before {
+    content: '';
+    padding: 12px;
+    border-radius: 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-top: 18px;
+    background: white;
+}
+
+.umala-page table .first-row::before {
+    visibility: hidden;
+}
+
+.umala-page table tr input[type="checkbox"]:checked+ ::before {
+    background-color: #0079bf;
+}
+
+.umala-page table thead {
+    color: #fff;
+    box-shadow: 0px 10px 10px 0px #00000040;
+    height: 63px;
+    background-color: #404040;
+    text-align: center;
+}
+
+.umala-page table thead td:first-child {
+    border-left: 1px solid green;
+}
+
+.umala-page table thead td:last-child {
+    border-right: 1px solid green;
+}
+
+.umala-page table td {
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+.umala-page table td:not(:first-child):after {
+    content: '';
+    width: 2px;
+    position: absolute;
+    right: 0;
+    height: 27px;
+    top: 14px;
+    /* bottom: 7px; */
+    background-color: #8F38F3;
+}
+
+
+.umala-page table tbody td {
+    border-top: 2px solid #949494;
+    border-bottom: 2px solid #949494;
+    padding: 8px;
+}
+
+.umala-page table tbody td:nth-child(1) {
+    border-right: 2px solid #949494;
+    border-radius: 0 20px 20px 0;
+}
+
+.umala-page table tbody td:nth-child(5) {
+    border-left: 2px solid #949494;
+    border-radius: 20px 0 0 20px;
+}
+
+.umala-page table tbody .talab {
+    color: #FF6B00;
+    width: 95px;
+}
+
+.umala-page table tbody .ejmali {
+    color: #FFDA15;
+}
+
+.umala-page table tbody .email-sec {
+    color: #71C7D5;
+}
+
+.umala-page table tbody .isam-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/*********************** Client inner page Styling End ****************************************/
+
+
+
+
+
+/*********************** Product inner page Styling Start ****************************************/
+
+.product-page .sales-chart-bg {
+    border-radius: 16px;
+    background: linear-gradient(134deg, #4E4E4E -16.04%, #333 9.33%, #1A1A1A 32.02%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%);
+    filter: drop-shadow(2px 6px 15px rgba(12, 10, 11, 0.80));
+    overflow-y: scroll;
+    height: 80vh;
+}
+
+.top-inner-page-btn button {
+    padding: 3px 20px;
+    background: none;
+    border: 2px solid #472561;
+    border-radius: 10px;
+    color: #948E92;
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.top-inner-page-btn .umala-head {
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+}
+
+.content .top-search {
+    position: relative;
+}
+
+.content .top-search .form-control {
+    background-color: #473F44;
+    border-radius: 24px;
+    padding: 0.375rem 2.5rem !important;
+    color: white;
+    border: none;
+}
+
+.content .top-search i {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    color: white;
+}
+
+.content .top-search .form-control::placeholder {
+    color: #C7C5C6;
+    font-size: 16px;
+}
+
+.content .top-dropdown .btn-drop {
+    border: 2px solid #472561;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.content .simple-btn {
+    border: none;
+    border-radius: 10px;
+    background: #8F38F3;
+    color: white;
+    padding: 5px 15px;
+}
+
+.dropdown-toggle::before {
+    display: none !important;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+
+.product-page table {
+    width: 100%;
+    font-size: 14px;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+    white-space: nowrap;
+}
+
+.product-page table .first-row::before {
+    visibility: hidden;
+}
+
+.product-page table tr input[type="checkbox"]:checked+ ::before {
+    background-color: #0079bf;
+}
+
+.product-page table thead {
+    color: #fff;
+    box-shadow: 0px 10px 10px 0px #00000040;
+    height: 63px;
+    background-color: #404040;
+    text-align: center;
+}
+
+.product-page table thead td:first-child {
+    border-left: 1px solid green;
+}
+
+.product-page table thead td:last-child {
+    border-right: 1px solid green;
+}
+
+.product-page table td {
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+.product-page table tbody td {
+    padding: 8px;
+    background: #404040
+}
+
+.product-page table tbody td:nth-child(1) {
+    border-radius: 0 10px 10px 0;
+}
+
+.product-page table tbody td:nth-child(6) {
+    border-radius: 10px 0 0 10px;
+}
+
+.product-page table tbody .isam-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.form-check-input[type="checkbox"] {
+    padding: 11px;
+    border-radius: 8px !important;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.mubmering {
+    border: 2px dashed #8F38F3;
+    padding: 3px 7px;
+    border-radius: 10px;
+}
+
+
+/*********************** Product inner page Styling End ****************************************/
+
+
+
+/*********************** setting-page inner page Styling Start ****************************************/
+
+.setting-page .sales-chart-bg {
+    border-radius: 16px;
+    background: linear-gradient(134deg, #4E4E4E -16.04%, #333 9.33%, #1A1A1A 32.02%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%);
+    filter: drop-shadow(2px 6px 15px rgba(12, 10, 11, 0.80));
+    /* overflow-y: scroll;
+    height: 80vh; */
+}
+
+.setting-page img {
+    width: 95px;
+    height: 93px;
+    object-fit: cover;
+}
+
+/*********************** setting-page inner page Styling End ****************************************/
+
+
+/*********************** Analytics-page inner page Styling Start ****************************************/
+
+.analytics-page .sales-chart-bg {
+    border-radius: 16px;
+    background: linear-gradient(134deg, #4E4E4E -16.04%, #333 9.33%, #1A1A1A 32.02%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%);
+    filter: drop-shadow(2px 6px 15px rgba(12, 10, 11, 0.80));
+}
+
+.analytics-page #bar-chart {
+    height: 100px !important;
+    width: 40px !important;
+}
+
+.analytics-page .sales-chart-bg .text-stat {
+    color: #fff;
+    font-size: 16px;
+}
+
+/*********************** Analytics-page inner page Styling End ****************************************/
+
+/*********************** Support-page-page inner page Styling Start ****************************************/
+
+.support-page {
+    background-color: rgba(217, 217, 217, 0.05);
+    padding: 20px 15px;
+    border-radius: 16px;
+}
+
+.support-page .accordion-button::after {
+    margin-right: auto !important;
+    margin-left: 0;
+    margin-top: 10px;
+    background-image: url('..//img/chevron-down.png');
+    ;
+}
+
+
+.accordion-button {
+    border-radius: 22px;
+    color: white;
+    padding: 7px 16px;
+}
+
+
+.accordion-item .accordion-button {
+    border-radius: 16px;
+    background: none !important;
+}
+
+.accordion-item .accordion-button:focus {
+    border-color: red !important;
+    box-shadow: none !important;
+}
+
+.accordion-item {
+    border-radius: 16px !important;
+    background: linear-gradient(134deg, #4E4E4E -16.04%, #333 9.33%, #1A1A1A 32.02%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%);
+    filter: drop-shadow(2px 6px 15px rgba(12, 10, 11, 0.80));
+    border: none;
+}
+
+.accordion-item .accordion-body p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url('../img/chevron-down.png');
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1024px) {
+    .umala-page table tr::before {
+        margin-left: 12px;
+
+    }
+
+    .coupon-page th {
+        font-size: 12px !important;
+    }
+
+
+    .coupon-page td {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width:767px) {
+    .product-left-btn {
+        gap: 0.5rem !important;
+        margin-top: 25px;
+    }
+    .mobile-p{
+        padding: 0 40px 30px 6px;
+    }
+
+}
+
+/*********************** coupon-page and pages page are same styling ****************************************/
+/* ******************************* Styling Start *******************************************************/
+
+.coupon-page .sales-chart-bg {
+    border-radius: 0;
+    background: linear-gradient(134deg, #4E4E4E -16.04%, #333 9.33%, #1A1A1A 32.02%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%);
+    filter: drop-shadow(2px 6px 15px rgba(12, 10, 11, 0.80));
+}
+
+.coupon-page table {
+    border-collapse: collapse;
+    width: 100%;
+    direction: rtl;
+    color: white;
+    text-align: right;
+    border: 1px solid rgba(120, 44, 150, 1);
+    font-size: 18px;
+}
+
+
+.coupon-page th {
+    border-bottom: 1px solid rgba(120, 44, 150, 1);
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+.coupon-page td {
+    padding: 28px 10px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(120, 44, 150, 1);
+}
+
+.coupon-page .form-check-input[type="checkbox"] {
+    padding: 1px;
+    border-radius: 0px !important;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+/*********************** coupon-page and pages page are same styling ****************************************/
+/* ******************************* Styling End *******************************************************/
+
+
+
+/********************* request page style **********************/
+
+.request-page {
+    border-radius: 16px;
+    background: linear-gradient(134deg, #4E4E4E -16.04%, #333 9.33%, #1A1A1A 32.02%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%);
+    filter: drop-shadow(2px 6px 15px rgba(12, 10, 11, 0.80));
+    overflow-y: scroll;
+    height: 80vh;
+}
+.request-page::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    display: none;
+}
+.top-icon-box{
+    border: none ;
+    padding: 15px 15px 15px 13px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #383838, #191919, #323232);
+    width: 20%
+    }
+    
+    .box-text{
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Almarai', sans-serif;
+        color: #ffffff;
+        padding: 0px;
+        text-align: right;
+        margin: 0px;
+    }
+    
+    @media (min-width: 550px) and (max-width: 1000px) {
+        .box-text{
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .top-boxes{ 
+                gap: 10px !important; 
+              }
+        }
+    
+    
+    .dotone {
+        width: 10px;
+        height: 10px;
+        background-color: #0085FF ;
+        border-radius: 100%;
+        display: flex ;
+        margin-top: 8px;
+        margin-left: 10px;
+      }
+    
+      @media (max-width: 550px) {
+        .top-icon-box{
+          flex-basis: 100%;
+          display: block;
+          width: 100%;
+          margin-top: 20px;
+        }
+        }
+      
+    
+      .top-boxes{
+        width: 100%; 
+        display: flex; 
+        gap: 20px; 
+        padding-top: 35px;
+      }
+    
+      @media (max-width: 550px) {
+        .top-boxes{
+          flex-basis: 100%;
+          display: block;
+          width: 100%;
+        }
+      }
+    
+    
+      /* request table */
+    
+      .request-heading {
+        font-size: 35px;
+        font-weight: 600;
+        font-family: 'Almarai', sans-serif;
+        color: #ffffff;
+        padding-bottom: 20px;
+        text-align: right;
+        margin: 0px;
+      }
+    
+      .request-table{
+        background-color: rgba(255, 255, 255, 0.062)fff;
+        backdrop-filter: blur(10px);
+      }
+    
+      .request-row{
+        background: #ffffff0c;
+        padding: 15px 5px;
+         border-radius: 10px; 
+        backdrop-filter: blur(10px);
+         margin-bottom: 25px;
+      }
+    
+      .custom-column {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    
+      .request-detail{
+        text-align: left;
+        vertical-align: middle;
+      }
+    
+      @media (max-width: 767px) {
+        .p-image{
+            width: 100%;
+        }
+    
+        .request-row{
+            background: #ffffff0c;
+             padding: 20px 10px; 
+            }
+    
+        .p-name{
+            width: 100%;
+            text-align:right !important;
+            margin-top: 10px !important;
+        }
+        .p-mail{
+            width: 100%; 
+            text-align:right !important;
+        }
+        .request-detail{
+            text-align:right;
+            vertical-align: middle;
+          }
+      }
+    
+    
+    
+    .p-image{
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+    
+    .p-name{
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'Almarai', sans-serif;
+        color: #ffffff;
+        padding: 0px;
+        text-align: right;
+        margin: 0px;
+        padding-bottom: 5px;
+    }
+    
+    .p-mail{
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Almarai', sans-serif;
+        color: #71C7D5;
+        padding: 0px;
+        text-align: right;
+        margin: 0px;
+    }
+    
+    
