@@ -8,6 +8,9 @@ Author: LEADconcept
 
 define('DASHBOARD_PLUGIN', plugin_dir_path(__FILE__));
 $plugin_url =  plugin_dir_url(__FILE__);
+
+// var_dump($plugin_url);
+// die();
 $plugin_path = plugin_dir_path(__FILE__);
 
 
