@@ -22,7 +22,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
             <div class="top-icon-box">
                 <div class="align-items-center" style="display: flex; justify-content: space-between; padding-bottom:15px; vertical-align: middle;">
                     <h1 class="box-text">38</h1>
-                    <img class="box-icon-img" src="img/blue-bag.png" alt="icon">
+                    <img class="box-icon-img" src="<?php echo $plugin_url ?>includes/assets/img/blue-bag.png" alt="icon">
                 </div>
                 <div style="display: flex; vertical-align: middle; text-align: center;">
                     <span class="dot dotone"></span>
@@ -33,7 +33,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
             <div class="top-icon-box">
                 <div class="align-items-center" style="display: flex; justify-content: space-between; padding-bottom:15px; vertical-align: middle;">
                     <h1 class="box-text">45</h1>
-                    <img class="box-icon-img" src="img/icon-red.png" alt="icon">
+                    <img class="box-icon-img" src="<?php echo $plugin_url ?>includes/assets/img/icon-red.png" alt="icon">
                 </div>
                 <div style="display: flex; vertical-align: middle; text-align: center;">
                     <span class="dot dotone" style="background-color:#F0A0A0;"></span>
@@ -44,7 +44,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
             <div class="top-icon-box">
                 <div class="align-items-center" style="display: flex; justify-content: space-between; padding-bottom:15px; vertical-align: middle;">
                     <h1 class="box-text">23</h1>
-                    <img class="box-icon-img" src="img/user-group.png" alt="icon">
+                    <img class="box-icon-img" src="<?php echo $plugin_url ?>includes/assets/img/user-group.png" alt="icon">
                 </div>
                 <div style="display: flex; vertical-align: middle; text-align: center;">
                     <span class="dot dotone" style="background-color: #9181DB;"></span>
@@ -55,7 +55,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
             <div class="top-icon-box">
                 <div class="align-items-center" style="display: flex; justify-content: space-between; padding-bottom:15px;">
                     <h1 class="box-text">78</h1>
-                    <img class="box-icon-img" src="img/icon-green.png" alt="icon">
+                    <img class="box-icon-img" src="<?php echo $plugin_url ?>includes/assets/img/icon-green.png" alt="icon">
                 </div>
                 <div style="display: flex; vertical-align: middle; text-align: center;">
                     <span class="dot dotone" style="background-color: #05E771;"></span>
@@ -66,7 +66,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
             <div class="top-icon-box">
                 <div class="align-items-center" style="display: flex; justify-content: space-between; padding-bottom:15px; vertical-align: middle;">
                     <h1 class="box-text">0</h1>
-                    <img class="box-icon-img" src="img/icon-yellow.png" alt="icon">
+                    <img class="box-icon-img" src="<?php echo $plugin_url ?>includes/assets/img/icon-yellow.png" alt="icon">
                 </div>
                 <div style="display: flex; vertical-align: middle; text-align: center;">
                     <span class="dot dotone" style="background-color: #FFA800;"></span>
@@ -95,7 +95,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                 &nbsp; &nbsp;
                 <div class="top-dropdown">
                     <div class="dropdown">
-                        <button class="btn btn-drop dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><img class="ms-2" src="./img/drop-threeline.png" alt="">المرشحات
+                        <button class="btn btn-drop dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><img class="ms-2" src="<?php echo $plugin_url ?>includes/assets/img/drop-threeline.png" alt="">المرشحات
                             <i class="fa fa-chevron-down me-2" style="font-size: 12px; color: white;"></i>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -109,7 +109,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                 &nbsp; &nbsp;
                 <div class="top-dropdown">
                     <div class="dropdown">
-                        <button class="btn btn-drop dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><img class="ms-2" src="./img/lock-img.png" alt="">خدمات
+                        <button class="btn btn-drop dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><img class="ms-2" src="<?php echo $plugin_url ?>includes/assets/img/lock-img.png" alt="">خدمات
                             <i class="fa fa-chevron-down me-2" style="font-size: 12px; color: white;"></i>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -129,7 +129,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
 
         <div class="row request-row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 align-items-center custom-column">
-                <img class="p-image" src="img/table-img-1.png" alt="image">
+                <img class="p-image" src="<?php echo $plugin_url ?>includes/assets/img/table-img-1.png" alt="image">
                 <div class="resquest-list-content">
                     <h2 class="p-name">نعيم اوزول</h2>
                     <p class="p-mail"> example@gmail.com</p>
@@ -143,7 +143,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
 
         <div class="row request-row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 align-items-center custom-column">
-                <img class="p-image" src="img/table-img-2.png" alt="image">
+                <img class="p-image" src="<?php echo $plugin_url ?>includes/assets/img/table-img-2.png" alt="image">
                 <div class="resquest-list-content">
                     <h2 class="p-name">نعيم اوزول</h2>
                     <p class="p-mail"> example@gmail.com</p>
@@ -157,7 +157,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
 
         <div class="row request-row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 align-items-center custom-column">
-                <img class="p-image" src="img/table-img-3.png" alt="image">
+                <img class="p-image" src="<?php echo $plugin_url ?>includes/assets/img/table-img-3.png" alt="image">
                 <div class="resquest-list-content">
                     <h2 class="p-name">نعيم اوزول</h2>
                     <p class="p-mail"> example@gmail.com</p>
@@ -171,7 +171,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
 
         <div class="row request-row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 align-items-center custom-column">
-                <img class="p-image" src="img/table-img-4.png" alt="image">
+                <img class="p-image" src="<?php echo $plugin_url ?>includes/assets/img/table-img-4.png" alt="image">
                 <div class="resquest-list-content">
                     <h2 class="p-name">نعيم اوزول</h2>
                     <p class="p-mail"> example@gmail.com</p>
@@ -185,7 +185,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
 
         <div class="row request-row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 align-items-center custom-column">
-                <img class="p-image" src="img/table-img-5.png" alt="image">
+                <img class="p-image" src="<?php echo $plugin_url ?>includes/assets/img/table-img-5.png" alt="image">
                 <div class="resquest-list-content">
                     <h2 class="p-name">نعيم اوزول</h2>
                     <p class="p-mail"> example@gmail.com</p>
@@ -199,7 +199,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
 
         <div class="row request-row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 align-items-center custom-column">
-                <img class="p-image" src="img/table-img-6.png" alt="image">
+                <img class="p-image" src="<?php echo $plugin_url ?>includes/assets/img/table-img-6.png" alt="image">
                 <div class="resquest-list-content">
                     <h2 class="p-name">نعيم اوزول</h2>
                     <p class="p-mail"> example@gmail.com</p>
@@ -213,7 +213,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
 
         <div class="row request-row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 align-items-center custom-column">
-                <img class="p-image" src="img/table-img-7.png" alt="image">
+                <img class="p-image" src="<?php echo $plugin_url ?>includes/assets/img/table-img-7.png" alt="image">
                 <div class="resquest-list-content">
                     <h2 class="p-name">نعيم اوزول</h2>
                     <p class="p-mail"> example@gmail.com</p>
@@ -240,10 +240,10 @@ include_once $plugin_path . 'page-templates/layout/header.php';
             <button class="simple-btn">يتقدم</button>
         </div>
         <div class="product-left-btn d-flex align-items-center gap-4">
-            <span class="text-white"><a href="#"> <img class="ms-2" src="./img/right-arrow.png" alt=""></a>
+            <span class="text-white"><a href="#"> <img class="ms-2" src="<?php echo $plugin_url ?>includes/assets/img/right-arrow.png" alt=""></a>
                 التالي</span>
             <span class="mubmering text-white">01</span>
-            <span class="text-white">سابق <a href="#"><img class="me-2" src="./img/left-arrow.png" alt=""></a>
+            <span class="text-white">سابق <a href="#"><img class="me-2" src="<?php echo $plugin_url ?>includes/assets/img/left-arrow.png" alt=""></a>
             </span>
 
         </div>
