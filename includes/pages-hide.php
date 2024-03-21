@@ -28,5 +28,3 @@ function custom_hide_pages_from_subsite_admin($query)
         }
     }
 }
-
-
