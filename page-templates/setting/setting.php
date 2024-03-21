@@ -25,7 +25,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
             <div class="col-lg-4">
                 <a href="#">
                     <div class="sales-chart-bg p-4 w-100 text-center">
-                        <img src="./img/setting-page-img-7.png" alt="">
+                        <img src="<?php echo $plugin_url ?>includes/assets/img/setting-page-img-7.png" alt="">
                         <h4 class="text-white fw-bold mt-3">إعدادات المتجر</h4>
                     </div>
                 </a>
@@ -33,7 +33,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
             <div class="col-lg-4">
                 <a href="#">
                     <div class="sales-chart-bg p-4 w-100 text-center">
-                        <img src="./img/setting-page-img-2.png" alt="">
+                        <img src="<?php echo $plugin_url ?>includes/assets/img/setting-page-img-2.png" alt="">
                         <h4 class="text-white fw-bold mt-3">إشعارات</h4>
                     </div>
                 </a>
@@ -41,7 +41,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
             <div class="col-lg-4">
                 <a href="#">
                     <div class="sales-chart-bg p-4 w-100 text-center">
-                        <img src="./img/setting-page-img-1.png" alt="">
+                        <img src="<?php echo $plugin_url ?>includes/assets/img/setting-page-img-1.png" alt="">
                         <h4 class="text-white fw-bold mt-3">الاعدادات العامة</h4>
                     </div>
                 </a>
@@ -51,7 +51,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
             <div class="col-lg-4">
                 <a href="#">
                     <div class="sales-chart-bg p-4 w-100 text-center">
-                        <img src="./img/setting-page-img-8.png" alt="">
+                        <img src="<?php echo $plugin_url ?>includes/assets/img/setting-page-img-8.png" alt="">
                         <h4 class="text-white fw-bold mt-3">قنوات التسويق</h4>
                     </div>
                 </a>
@@ -59,7 +59,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
             <div class="col-lg-4">
                 <a href="#">
                     <div class="sales-chart-bg p-4 w-100 text-center">
-                        <img src="./img/setting-page-img-4.png" alt="">
+                        <img src="<?php echo $plugin_url ?>includes/assets/img/setting-page-img-4.png" alt="">
                         <h4 class="text-white fw-bold mt-3">إعدادات المدفوعات</h4>
                     </div>
                 </a>
@@ -67,7 +67,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
             <div class="col-lg-4">
                 <a href="#">
                     <div class="sales-chart-bg p-4 w-100 text-center">
-                        <img src="./img/setting-page-img-3.png" alt="">
+                        <img src="<?php echo $plugin_url ?>includes/assets/img/setting-page-img-3.png" alt="">
                         <h4 class="text-white fw-bold mt-3">رموز مخصصة</h4>
                     </div>
                 </a>
@@ -77,7 +77,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
             <div class="col-lg-4">
                 <a href="#">
                     <div class="sales-chart-bg p-4 w-100 text-center">
-                        <img src="./img/setting-page-img-9.png" alt="">
+                        <img src="<?php echo $plugin_url ?>includes/assets/img/setting-page-img-9.png" alt="">
                         <h4 class="text-white fw-bold mt-3">إعداد المخزون</h4>
                     </div>
                 </a>
@@ -85,7 +85,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
             <div class="col-lg-4">
                 <a href="#">
                     <div class="sales-chart-bg p-4 w-100 text-center">
-                        <img src="./img/setting-page-img-6.png" alt="">
+                        <img src="<?php echo $plugin_url ?>includes/assets/img/setting-page-img-6.png" alt="">
                         <h4 class="text-white fw-bold mt-3">اعدادات الشحن</h4>
                     </div>
                 </a>
@@ -93,7 +93,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
             <div class="col-lg-4">
                 <a href="#">
                     <div class="sales-chart-bg p-4 w-100 text-center">
-                        <img src="./img/setting-page-img-5.png" alt="">
+                        <img src="<?php echo $plugin_url ?>includes/assets/img/setting-page-img-5.png" alt="">
                         <h4 class="text-white fw-bold mt-3">الأدوار والأذونات</h4>
                     </div>
                 </a>

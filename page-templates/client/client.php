@@ -65,7 +65,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
 
                         <tr>
                             <td class="text-end" dir="ltr">نعيم اوزول
-                                <img class="isam-image ms-2" src="./img/table-img-1.png" alt="">
+                                <img class="isam-image ms-2" src="<?php echo $plugin_url ?>includes/assets/img/table-img-1.png" alt="">
                             </td>
                             <td class="email-sec">example@gmail.com</td>
                             <td class="ejmali">3856 بس</td>
@@ -75,7 +75,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
 
                         <tr>
                             <td class="text-end" dir="ltr">نعيم اوزول
-                                <img class="isam-image ms-2" src="./img/table-img-2.png" alt="">
+                                <img class="isam-image ms-2" src="<?php echo $plugin_url ?>includes/assets/img/table-img-2.png" alt="">
                             </td>
                             <td class="email-sec">example@gmail.com</td>
                             <td class="ejmali">3856 بس</td>
@@ -84,7 +84,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                         </tr>
                         <tr>
                             <td class="text-end" dir="ltr">نعيم اوزول
-                                <img class="isam-image ms-2" src="./img/table-img-3.png" alt="">
+                                <img class="isam-image ms-2" src="<?php echo $plugin_url ?>includes/assets/img/table-img-3.png" alt="">
                             </td>
                             <td class="email-sec">example@gmail.com</td>
                             <td class="ejmali">3856 بس</td>
@@ -93,7 +93,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                         </tr>
                         <tr>
                             <td class="text-end" dir="ltr">نعيم اوزول
-                                <img class="isam-image ms-2" src="./img/table-img-4.png" alt="">
+                                <img class="isam-image ms-2" src="<?php echo $plugin_url ?>includes/assets/img/table-img-4.png" alt="">
                             </td>
                             <td class="email-sec">example@gmail.com</td>
                             <td class="ejmali">3856 بس</td>
@@ -102,7 +102,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                         </tr>
                         <tr>
                             <td class="text-end" dir="ltr">نعيم اوزول
-                                <img class="isam-image ms-2" src="./img/table-img-5.png" alt="">
+                                <img class="isam-image ms-2" src="<?php echo $plugin_url ?>includes/assets/img/table-img-5.png" alt="">
                             </td>
                             <td class="email-sec">example@gmail.com</td>
                             <td class="ejmali">3856 بس</td>
@@ -111,7 +111,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                         </tr>
                         <tr>
                             <td class="text-end" dir="ltr">نعيم اوزول
-                                <img class="isam-image ms-2" src="./img/table-img-6.png" alt="">
+                                <img class="isam-image ms-2" src="<?php echo $plugin_url ?>includes/assets/img/table-img-6.png" alt="">
                             </td>
                             <td class="email-sec">example@gmail.com</td>
                             <td class="ejmali">3856 بس</td>
@@ -120,7 +120,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                         </tr>
                         <tr>
                             <td class="text-end" dir="ltr">نعيم اوزول
-                                <img class="isam-image ms-2" src="./img/table-img-7.png" alt="">
+                                <img class="isam-image ms-2" src="<?php echo $plugin_url ?>includes/assets/img/table-img-7.png" alt="">
                             </td>
                             <td class="email-sec">example@gmail.com</td>
                             <td class="ejmali">3856 بس</td>
@@ -129,7 +129,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                         </tr>
                         <tr>
                             <td class="text-end" dir="ltr">نعيم اوزول
-                                <img class="isam-image ms-2" src="./img/table-img-8.png" alt="">
+                                <img class="isam-image ms-2" src="<?php echo $plugin_url ?>includes/assets/img/table-img-8.png" alt="">
                             </td>
                             <td class="email-sec">example@gmail.com</td>
                             <td class="ejmali">3856 بس</td>
@@ -138,7 +138,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                         </tr>
                         <tr>
                             <td class="text-end" dir="ltr">نعيم اوزول
-                                <img class="isam-image ms-2" src="./img/table-img-9.png" alt="">
+                                <img class="isam-image ms-2" src="<?php echo $plugin_url ?>includes/assets/img/table-img-9.png" alt="">
                             </td>
                             <td class="email-sec">example@gmail.com</td>
                             <td class="ejmali">3856 بس</td>
@@ -147,7 +147,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                         </tr>
                         <tr>
                             <td class="text-end" dir="ltr">نعيم اوزول
-                                <img class="isam-image ms-2" src="./img/table-img-1.png" alt="">
+                                <img class="isam-image ms-2" src="<?php echo $plugin_url ?>includes/assets/img/table-img-1.png" alt="">
                             </td>
                             <td class="email-sec">example@gmail.com</td>
                             <td class="ejmali">3856 بس</td>
@@ -156,7 +156,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                         </tr>
                         <tr>
                             <td class="text-end" dir="ltr">نعيم اوزول
-                                <img class="isam-image ms-2" src="./img/table-img-1.png" alt="">
+                                <img class="isam-image ms-2" src="<?php echo $plugin_url ?>includes/assets/img/table-img-1.png" alt="">
                             </td>
                             <td class="email-sec">example@gmail.com</td>
                             <td class="ejmali">3856 بس</td>
@@ -165,7 +165,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                         </tr>
                         <tr>
                             <td class="text-end" dir="ltr">نعيم اوزول
-                                <img class="isam-image ms-2" src="./img/table-img-1.png" alt="">
+                                <img class="isam-image ms-2" src="<?php echo $plugin_url ?>includes/assets/img/table-img-1.png" alt="">
                             </td>
                             <td class="email-sec">example@gmail.com</td>
                             <td class="ejmali">3856 بس</td>
@@ -174,7 +174,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                         </tr>
                         <tr>
                             <td class="text-end" dir="ltr">نعيم اوزول
-                                <img class="isam-image ms-2" src="./img/table-img-1.png" alt="">
+                                <img class="isam-image ms-2" src="<?php echo $plugin_url ?>includes/assets/img/table-img-1.png" alt="">
                             </td>
                             <td class="email-sec">example@gmail.com</td>
                             <td class="ejmali">3856 بس</td>
@@ -183,7 +183,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                         </tr>
                         <tr>
                             <td class="text-end" dir="ltr">نعيم اوزول
-                                <img class="isam-image ms-2" src="./img/table-img-1.png" alt="">
+                                <img class="isam-image ms-2" src="<?php echo $plugin_url ?>includes/assets/img/table-img-1.png" alt="">
                             </td>
                             <td class="email-sec">example@gmail.com</td>
                             <td class="ejmali">3856 بس</td>

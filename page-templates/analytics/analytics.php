@@ -94,10 +94,10 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                 <div class="sales-chart-bg p-3 w-100">
                     <div class="d-flex align-items-center justify-content-between mb-3">
                         <h6 class="mb-0 text-stat">إجمالي الطلبات</h6>
-                        <img src="./img/icon-yellow.png" alt="icon" class="img-icon">
+                        <img src="<?php echo $plugin_url ?>includes/assets/img/icon-yellow.png" alt="icon" class="img-icon">
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
-                        <img src="./img/icon-eye.png" alt="icon" class="img-fluid">
+                        <img src="<?php echo $plugin_url ?>includes/assets/img/icon-eye.png" alt="icon" class="img-fluid">
                         <span class="text-white fw-bold" style="font-size: 22px;">طلبات 200</span>
                     </div>
                     <div class="progress">
@@ -109,11 +109,11 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                 <div class="sales-chart-bg px-3 pt-3">
                     <div class="d-flex align-items-center justify-content-between mb-3">
                         <h6 class="mb-0 text-stat">متوسط قيمة الطلب</h6>
-                        <img src="./img/icon-red.png" alt="icon" class="img-icon">
+                        <img src="<?php echo $plugin_url ?>includes/assets/img/icon-red.png" alt="icon" class="img-icon">
                     </div>
                     <div class="px-4 d-flex align-items-center gap-1">
                         <span class="text-white">أعلى</span>
-                        <img src="./img/icon-upward.png" alt="icon" class="img-fluid">
+                        <img src="<?php echo $plugin_url ?>includes/assets/img/icon-upward.png" alt="icon" class="img-fluid">
                     </div>
                     <div id="spark6"></div>
                 </div>
@@ -122,7 +122,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                 <div class="sales-chart-bg px-3 pt-3 flex-grow-1">
                     <div class="d-flex align-items-center justify-content-between mb-3">
                         <h6 class="mb-0 text-stat">عدد العملاء :</h6>
-                        <img src="./img/user-group.png" alt="icon" class="img-icon">
+                        <img src="<?php echo $plugin_url ?>includes/assets/img/user-group.png" alt="icon" class="img-icon">
                     </div>
                     <div class="d-flex justify-content-between">
                         <div>
@@ -147,7 +147,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
                 <div class="sales-chart-bg p-3 flex-grow-1">
                     <div class="d-flex align-items-center justify-content-between mb-3">
                         <h6 class="mb-0 text-stat">الربح المتوقع</h6>
-                        <img src="./img/icon-green.png" alt="icon" class="img-icon">
+                        <img src="<?php echo $plugin_url ?>includes/assets/img/icon-green.png" alt="icon" class="img-icon">
                     </div>
                     <div style="text-align: -webkit-left;">
                         <canvas id="doughnut-chart"></canvas>

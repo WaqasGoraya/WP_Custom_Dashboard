@@ -20,11 +20,14 @@
 
 <body>
     <?php
-    $img =  get_avatar(get_current_user_id(), 150);
-    // $current_user = wp_get_current_user();
-    // echo "<pre>";
-    // print_r($img);
+    $current_user = wp_get_current_user();
+    // echo"<pre>";
+    // print_r($current_user);
     // exit;
+    // Get profile picture attachment ID
+    $profile_picture_id = get_user_meta($current_user->ID, 'profile_picture', true);
+    // Get the profile picture URL
+    $profile_picture_url = wp_get_attachment_url($profile_picture_id);
 
     ?>
     <div class="position-relative bg-container d-flex p-0">
@@ -41,13 +44,13 @@
                                     <p class="p-email"><?php echo $current_user->user_email; ?></p>
                                 </div>
                                 <div class="profile">
-                                    <img class="rounded-circle me-lg-2" src="<?php echo $plugin_url ?>includes/assets/img/user.png" alt="" style="width: 40px; height: 40px; cursor: pointer;">
+                                    <img class="rounded-circle me-lg-2" src="<?php echo $profile_picture_url; ?>" alt="" style="width: 40px; height: 40px; cursor: pointer;">
                                     <div class="profile-menu">
                                         <div class="main-header-profile bg-menu p-2">
                                             <div class="d-flex wd-100p gap-3">
                                                 <div class="main-img-user">
-                                                    <?php echo $img; ?>
-                                                    <!-- <img alt="user_profile" src="includes/assets/img/user.jpg"> -->
+
+                                                    <img alt="user_profile" src="<?php echo $profile_picture_url; ?>">
                                                 </div>
                                                 <div class="ms-3 my-auto main-user-info">
                                                     <h6 class="title"><?php echo $current_user->display_name; ?></h6>

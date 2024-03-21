@@ -5,6 +5,7 @@ include_once $plugin_path . 'page-templates/layout/header.php';
 $current_user = wp_get_current_user();
 
 $users = get_users();
+
 ?>
 
 
@@ -67,11 +68,19 @@ $users = get_users();
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($users as $user) : ?>
+                        <?php foreach ($users as $user) :
+                            // Get profile picture attachment ID
+                            $profile_picture_id = get_user_meta($user->ID, 'profile_picture', true);
+                            // Get the profile picture URL
+                            $profile_picture_url = wp_get_attachment_url($profile_picture_id);
+
+                            $first_name = get_user_meta($user->ID, 'first_name', true); // Get the first name
+                            $last_name = get_user_meta($user->ID, 'last_name', true); // Get the last name
+                        ?>
                             <tr>
                                 <a href="<?php echo home_url('/admin/users/edit-user/?user_id=' . $user->ID); ?>">
-                                    <td class="text-end ejmali" dir="ltr">webadmin
-                                        <img class="isam-image ms-2" src="<?php get_template_directory_uri() ?>/includes/assets/img/table-img-1.png" alt="">
+                                    <td class="text-end ejmali" dir="ltr"><?= $first_name .' '. $last_name; ?>
+                                        <img class="isam-image ms-2" src="<?= $profile_picture_url; ?>" alt="">
                                     </td>
                                 </a>
                                 <td><?= $user->user_login ?></td>
