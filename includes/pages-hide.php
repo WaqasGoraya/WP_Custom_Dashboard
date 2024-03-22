@@ -9,7 +9,7 @@ function custom_hide_pages_from_subsite_admin($query)
 
     if (is_admin() && $pagenow === 'edit.php' && isset($_GET['post_type']) && $_GET['post_type'] === 'page') {
         // Array of page slugs to hide
-        $pages_to_hide_slugs = array('admin', 'admin/themes', 'admin/users', 'admin/users/edit-user', 'admin/users/view-user');
+        $pages_to_hide_slugs = array('admin', 'admin/themes', 'admin/users', 'admin/users/edit-user', 'admin/users/view-user', 'admin/products', 'admin/products/edit-product', 'admin/clients', 'admin/request', 'admin/coupon', 'admin/setting', 'admin/support', 'admin/analytics', 'admin/pages',);
 
         // Initialize an empty array to store page IDs
         $pages_to_hide_ids = array();

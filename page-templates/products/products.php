@@ -100,7 +100,7 @@ wp_reset_postdata();
                     <thead>
                         <tr class="first-row">
                             <th scope="col" class="text-end pe-2" dir="ltr">اسم المنتج
-                                <img class="isam-image ms-2" src="./img/product-gallery-img.png" style="width: 30px; height: 30px;" alt="">
+                                <img class="isam-image ms-2" src="<?php echo $plugin_url ?>includes/assets/img/product-gallery-img.png" style="width: 30px; height: 30px;" alt="">
                                 <input class="form-check-input" style="margin-top: 2px;" type="checkbox" value="" id="flexCheckDefault">
                             </th>
                             <th scope="col">SKU</th>
@@ -117,6 +117,16 @@ wp_reset_postdata();
                             $tags = get_the_terms($product->ID, 'product_tag');
                             $categories = get_the_terms($product->ID, 'product_cat');
 
+                            // Get the featured image ID
+                            $image_id = get_post_thumbnail_id($product->ID);
+
+
+
+                            // Get the image URL
+                            $image_url = wp_get_attachment_image_src($image_id, 'full');
+                            // echo '<pre>';
+                            // print_r($image_url[0]);
+                            // die();
                             // Get the product object
                             $product_obj = wc_get_product($product->ID);
 
@@ -137,7 +147,7 @@ wp_reset_postdata();
                             <tr class="text-white">
                                 <td class="text-end" dir="ltr"><?= $title ?>
                                     <a href="<?php echo home_url('/admin/products/edit-product/?product_id=' . $product->ID); ?>">
-                                        <img class="isam-image ms-2" src="./img/product-table-img-1.png" alt="">
+                                        <img class="isam-image ms-2" src="<?= $image_url[0]; ?>" alt="">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     </a>
 

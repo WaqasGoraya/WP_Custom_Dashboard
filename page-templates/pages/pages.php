@@ -3,52 +3,6 @@ include_once $plugin_path . 'page-templates/layout/header.php';
 ?>
 <!-- Content Start -->
 <div class="content pt-0 mobile-p">
-    <!-- Navbar Start -->
-    <div>
-        <nav class="navbar navbar-expand bg-navbar flex-wrap justify-content-center justify-content-lg-end navbar-light px-lg-4 py-3 gap-1">
-            <div class="navbar-nav flex-wrap align-items-center gap-3">
-                <div class="nav-item d-flex gap-3">
-                    <!-- <a href="#" class="nav-link m-0">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" viewBox="0 0 26 30" fill="none">
-                                                <path d="M25.7143 24.2857V25.7143H0V24.2857L2.85714 21.4286V12.8571C2.85714 8.42857 5.75714 4.52857 10 3.27143V2.85714C10 2.09938 10.301 1.37266 10.8368 0.836838C11.3727 0.301019 12.0994 0 12.8571 0C13.6149 0 14.3416 0.301019 14.8774 0.836838C15.4133 1.37266 15.7143 2.09938 15.7143 2.85714V3.27143C19.9571 4.52857 22.8571 8.42857 22.8571 12.8571V21.4286L25.7143 24.2857ZM15.7143 27.1429C15.7143 27.9006 15.4133 28.6273 14.8774 29.1632C14.3416 29.699 13.6149 30 12.8571 30C12.0994 30 11.3727 29.699 10.8368 29.1632C10.301 28.6273 10 27.9006 10 27.1429" fill="#8D4FCC"/>
-                                                <circle cx="20.0006" cy="7.14265" r="4.28571" fill="white"/>
-                                            </svg>
-                                        </a> -->
-                    <span class="d-flex align-items-center gap-4">
-                        <div>
-                            <a href="#"><img src="./img/notification.png" alt=""></a>
-                        </div>
-                        <div class="info">
-                            <p class="mb-0 p-name">مشعل منال</p>
-                            <a href="mailto:sairakarim1997@gmail.com" class="p-email">sairakarim1997@gmail.com</a>
-                        </div>
-                        <div class="profile">
-                            <img class="rounded-circle me-lg-2" src="img/user.png" alt="" style="width: 40px; height: 40px; cursor: pointer;">
-                            <div class="profile-menu">
-                                <div class="main-header-profile bg-menu p-2">
-                                    <div class="d-flex wd-100p gap-3">
-                                        <div class="main-img-user">
-                                            <img alt="user_profile" src="img/user.jpg">
-                                        </div>
-                                        <div class="ms-3 my-auto main-user-info">
-                                            <h6 class="title">مشعل منال</h6>
-                                            <span class="subtitle">قسط الأعضاء </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-cog ms-2"></i> تعديل الملف
-                                    الشخصي </a>
-                                <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt ms-2"></i>
-                                    خروج</a>
-                            </div>
-                        </div>
-
-                    </span>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <!-- Navbar End -->
     <div class="top-inner-page-btn d-flex align-items-center gap-3 mt-3 flex-wrap">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22" fill="none">
             <path d="M5 1H14.5L19 5.5V18" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />

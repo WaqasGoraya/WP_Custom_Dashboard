@@ -39,13 +39,13 @@ function create_dashboard_pages_for_existing_sites()
                 'parent_slug' => 'admin',
             ),
             array(
-                'title' => 'Products',
+                'title' => 'Edit Product',
                 'slug' => 'edit-product',
                 'parent_slug' => 'admin/products',
             ),
             array(
-                'title' => 'Client',
-                'slug' => 'client',
+                'title' => 'Clients',
+                'slug' => 'clients',
                 'parent_slug' => 'admin',
             ),
             array(

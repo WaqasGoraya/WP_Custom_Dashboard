@@ -19,6 +19,5 @@
 </head>
 
 <body>
-  
     <div class="position-relative bg-container d-flex p-0">
         <!-- Content Start -->

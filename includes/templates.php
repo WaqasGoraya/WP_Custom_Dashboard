@@ -17,7 +17,7 @@ function custom_template_plugin_page_template($template)
         'view-user' => 'users/view-user.php',
 
         //clinet 
-        'client' => 'client/client.php',
+        'clients' => 'client/client.php',
 
         //products
         'products' => 'products/products.php',
