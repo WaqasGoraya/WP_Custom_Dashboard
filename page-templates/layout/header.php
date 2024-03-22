@@ -19,13 +19,6 @@
 </head>
 
 <body>
-    <?php
-    $img =  get_avatar(get_current_user_id(), 150);
-    // $current_user = wp_get_current_user();
-    // echo "<pre>";
-    // print_r($img);
-    // exit;
-
-    ?>
+  
     <div class="position-relative bg-container d-flex p-0">
         <!-- Content Start -->

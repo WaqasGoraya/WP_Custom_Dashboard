@@ -143,9 +143,7 @@ wp_reset_postdata();
 
                                 </td>
                                 <td><?= $sku ?></td>
-
                                 <td>في الأوراق المالية</td>
-
                                 <td>$<?= $price ?></td>
                                 <td><?php foreach ($categories as $key => $cat) { ?>
                                         <span class=""><?= $cat->name ?></span>
