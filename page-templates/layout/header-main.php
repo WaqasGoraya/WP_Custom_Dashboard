@@ -35,7 +35,8 @@
         <div class="content">
             <!-- Navbar Start -->
             <div class="px-lg-4">
-                <nav class="navbar navbar-expand bg-navbar flex-wrap justify-content-center justify-content-lg-end navbar-light px-lg-4 py-3 gap-1">
+                <nav class="navbar navbar-expand bg-navbar flex-wrap justify-content-center justify-content-lg-end navbar-light px-lg-4 py-3 gap-1" style="position: relative;
+    z-index: 1;">
                     <div class="navbar-nav flex-wrap align-items-center gap-3">
                         <div class="nav-item d-flex gap-3">
                             <span class="d-flex">
@@ -54,7 +55,7 @@
                                                 </div>
                                                 <div class="ms-3 my-auto main-user-info">
                                                     <h6 class="title"><?php echo $current_user->display_name; ?></h6>
-                                                    <!-- <span class="subtitle">قسط الأعضاء </span> -->
+                                                    <span class="subtitle">قسط الأعضاء </span>
                                                 </div>
                                             </div>
                                         </div>
