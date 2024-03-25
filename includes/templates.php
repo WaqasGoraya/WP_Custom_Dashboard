@@ -15,29 +15,22 @@ function custom_template_plugin_page_template($template)
         'themes' => 'themes/themes.php',
         'edit-user' => 'users/edit-user.php',
         'view-user' => 'users/view-user.php',
-
         //clinet 
         'clients' => 'client/client.php',
-
         //products
         'products' => 'products/products.php',
         'edit-product' => 'products/edit-product.php',
-
+        'product-create' => 'products/add-product.php',
         //setting
         'setting' => 'setting/setting.php',
-
         //pages
         'pages' => 'pages/pages.php',
-
         //request
         'request' => 'request/request.php',
-
         //support
         'support' => 'support/support.php',
-
         //coupon
         'coupon' => 'coupon/coupon.php',
-
         //analytics
         'analytics' => 'analytics/analytics.php',
 
@@ -46,7 +39,7 @@ function custom_template_plugin_page_template($template)
     // Check if the current page slug is in the custom_templates array
     if (array_key_exists($current_page_slug, $custom_templates)) {
         // Set the template path based on the custom_templates array
-        $template = DASHBOARD_PLUGIN  . 'page-templates/' . $custom_templates[$current_page_slug];
+        $template = DASHBOARD_PLUGIN . 'page-templates/' . $custom_templates[$current_page_slug];
     }
 
     return $template;
