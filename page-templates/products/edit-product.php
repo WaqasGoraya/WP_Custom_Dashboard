@@ -10,6 +10,9 @@ if (isset ($_POST['submit']) && $_POST['submit'] === 'Update Product') {
     $product = wc_get_product($product_id);
 
 
+  
+
+
 
     if (!$product) {
         return;
@@ -50,6 +53,7 @@ if (isset ($_POST['submit']) && $_POST['submit'] === 'Update Product') {
             $product_id = isset ($_GET['product_id']) ? intval($_GET['product_id']) : 0;
 
             $product = wc_get_product($product_id);
+           
 
             // echo '<pre>';
             // print_r($product->get_available_variations());
