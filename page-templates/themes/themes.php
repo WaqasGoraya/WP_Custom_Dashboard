@@ -139,7 +139,7 @@ if (isset($_POST['selected_theme'])) {
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
         <div class="wrap">
-            <h1 class="wp-heading-inline">Themes</h1>
+            <h1 class="wp-heading-inline">المواضيع</h1>
             <?php if (!empty($message)) : ?>
                 <div id="message" class="updated notice is-dismissible">
                     <p><?php echo esc_html($message); ?></p>

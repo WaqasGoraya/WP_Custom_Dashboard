@@ -2,7 +2,7 @@
 
 include_once $plugin_path . 'page-templates/layout/header.php';
 
-$current_user = wp_get_current_user();
+// $current_user = wp_get_current_user();
 
 $users = get_users();
 
@@ -69,6 +69,9 @@ $users = get_users();
                     </thead>
                     <tbody>
                         <?php foreach ($users as $user) :
+                        // echo"<pre>";
+                        // print_r($user->roles[0]);
+                        // exit;
                             // Get profile picture attachment ID
                             $profile_picture_id = get_user_meta($user->ID, 'profile_picture', true);
                             // Get the profile picture URL
@@ -76,16 +79,23 @@ $users = get_users();
 
                             $first_name = get_user_meta($user->ID, 'first_name', true); // Get the first name
                             $last_name = get_user_meta($user->ID, 'last_name', true); // Get the last name
+
+                            $name = '';
+                            if($first_name && $last_name){
+                                $name = $first_name .''. $last_name; 
+                            }else{
+                                $name = $user->display_name;
+                            }
                         ?>
                             <tr>
                                 <a href="<?php echo home_url('/admin/users/edit-user/?user_id=' . $user->ID); ?>">
-                                    <td class="text-end ejmali" dir="ltr"><?= $first_name .' '. $last_name; ?>
+                                    <td class="text-end ejmali" dir="ltr"><?= $name; ?>
                                         <img class="isam-image ms-2" src="<?= $profile_picture_url; ?>" alt="">
                                     </td>
                                 </a>
                                 <td><?= $user->user_login ?></td>
                                 <td class="email-sec"><?= $user->user_email ?></td>
-                                <td><?= $current_user->roles[0] ?></td>
+                                <td><?= $user->roles[0] ?></td>
                                 <td class="talab">4</td>
                             </tr>
                         <?php endforeach; ?>
