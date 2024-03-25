@@ -44,6 +44,11 @@ function create_dashboard_pages_for_existing_sites()
                 'parent_slug' => 'admin/products',
             ),
             array(
+                'title' => 'Add Product',
+                'slug' => 'product-create',
+                'parent_slug' => 'admin/products',
+            ),
+            array(
                 'title' => 'Clients',
                 'slug' => 'clients',
                 'parent_slug' => 'admin',
@@ -91,7 +96,7 @@ function create_dashboard_pages_for_existing_sites()
             );
 
             // Check if the parent slug is specified
-            if (!empty($page_data['parent_slug'])) {
+            if (!empty ($page_data['parent_slug'])) {
                 // Get the parent page ID using the parent slug
                 $parent_page = get_page_by_path($page_data['parent_slug']);
                 if ($parent_page) {
