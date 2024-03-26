@@ -1,5 +1,14 @@
 <?php
 include_once $plugin_path . 'page-templates/layout/header.php';
+// Get all orders
+$orders = wc_get_orders(array(
+    'limit' => -1, // Get all orders
+    'status' => array('completed', 'processing', 'on-hold', 'pending', 'cancelled', 'refunded', 'failed'), // Filter by order statuses
+));
+
+// echo"<pre>";
+// print_r($orders);
+// exit;
 ?>
 
 <!-- Content Start -->
@@ -125,105 +134,58 @@ include_once $plugin_path . 'page-templates/layout/header.php';
 
     <div class="container request-page px-4">
 
-        <h1 class="request-heading mt-3">الطلبات</h1>
+        <!-- <h1 class="request-heading mt-3">الطلبات</h1> -->
 
-        <div class="row request-row">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 align-items-center custom-column">
-                <img class="p-image" src="<?php echo $plugin_url ?>includes/assets/img/table-img-1.png" alt="image">
-                <div class="resquest-list-content">
-                    <h2 class="p-name">نعيم اوزول</h2>
-                    <p class="p-mail"> example@gmail.com</p>
+        <!-- Table Start -->
+        <div class="pt-4 umala-page">
+            <div class="sales-chart-bg px-3">
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr class="first-row">
+                                <th scope="col">طلب</th>
+                                <th scope="col">تاريخ</th>
+                                <th scope="col">حالة</th>
+                                <th scope="col">المجموع</th>
+                                <th scope="col">فعل</th>
+                            </tr>
+                        </thead>
+                        <tbody id="customerSearchResults">
+                            <?php
+                            if (!empty($orders)) :
+                                foreach ($orders as $order) :
+
+                                    $order_id = $order->get_id();
+                                    $order_number = $order->get_order_number();
+                                    $customer_name = $order->get_billing_first_name() . ' ' . $order->get_billing_last_name();
+                                    $order_total = $order->get_total();
+                                    $order_status = $order->get_status();
+                                    $order_date = $order->get_date_created()->format('M d, Y'); // Format order date
+
+                            ?>
+                                    <tr>
+                                        <td class="text-end" dir="ltr">#<?= $order_number . ' ' . $customer_name; ?></td>
+
+
+                                        <td> <?= $order_date; ?></td>
+                                        <td class="talab"><?= $order_status; ?></td>
+
+                                        <td class="ejmali"><?= $order_total; ?> <?= get_woocommerce_currency_symbol(); ?></td>
+                                        <td>
+                                            <a href="#">Edit</a>|
+                                            <a href="#">Delete</a>
+                                        </td>
+                                    </tr>
+                                <?php endforeach;
+                            else : ?>
+                                <h4 style="text-align:center; color:white;">No Customer Data Available!</h4>
+                            <?php endif; ?>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex flex-column justify-content-center request-detail">
-                <h2 class="p-name" style="text-align: left;">22-02-2023</h2>
-                <p class="p-mail" style="text-align: left;">6 days ago</p>
-            </div>
         </div>
-
-        <div class="row request-row">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 align-items-center custom-column">
-                <img class="p-image" src="<?php echo $plugin_url ?>includes/assets/img/table-img-2.png" alt="image">
-                <div class="resquest-list-content">
-                    <h2 class="p-name">نعيم اوزول</h2>
-                    <p class="p-mail"> example@gmail.com</p>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex flex-column justify-content-center request-detail">
-                <h2 class="p-name" style="text-align: left;">22-02-2023</h2>
-                <p class="p-mail" style="text-align: left;">6 days ago</p>
-            </div>
-        </div>
-
-        <div class="row request-row">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 align-items-center custom-column">
-                <img class="p-image" src="<?php echo $plugin_url ?>includes/assets/img/table-img-3.png" alt="image">
-                <div class="resquest-list-content">
-                    <h2 class="p-name">نعيم اوزول</h2>
-                    <p class="p-mail"> example@gmail.com</p>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex flex-column justify-content-center request-detail">
-                <h2 class="p-name" style="text-align: left;">22-02-2023</h2>
-                <p class="p-mail" style="text-align: left;">6 days ago</p>
-            </div>
-        </div>
-
-        <div class="row request-row">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 align-items-center custom-column">
-                <img class="p-image" src="<?php echo $plugin_url ?>includes/assets/img/table-img-4.png" alt="image">
-                <div class="resquest-list-content">
-                    <h2 class="p-name">نعيم اوزول</h2>
-                    <p class="p-mail"> example@gmail.com</p>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex flex-column justify-content-center request-detail">
-                <h2 class="p-name" style="text-align: left;">22-02-2023</h2>
-                <p class="p-mail" style="text-align: left;">6 days ago</p>
-            </div>
-        </div>
-
-        <div class="row request-row">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 align-items-center custom-column">
-                <img class="p-image" src="<?php echo $plugin_url ?>includes/assets/img/table-img-5.png" alt="image">
-                <div class="resquest-list-content">
-                    <h2 class="p-name">نعيم اوزول</h2>
-                    <p class="p-mail"> example@gmail.com</p>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex flex-column justify-content-center request-detail">
-                <h2 class="p-name" style="text-align: left;">22-02-2023</h2>
-                <p class="p-mail" style="text-align: left;">6 days ago</p>
-            </div>
-        </div>
-
-        <div class="row request-row">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 align-items-center custom-column">
-                <img class="p-image" src="<?php echo $plugin_url ?>includes/assets/img/table-img-6.png" alt="image">
-                <div class="resquest-list-content">
-                    <h2 class="p-name">نعيم اوزول</h2>
-                    <p class="p-mail"> example@gmail.com</p>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex flex-column justify-content-center request-detail">
-                <h2 class="p-name" style="text-align: left;">22-02-2023</h2>
-                <p class="p-mail" style="text-align: left;">6 days ago</p>
-            </div>
-        </div>
-
-        <div class="row request-row">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 align-items-center custom-column">
-                <img class="p-image" src="<?php echo $plugin_url ?>includes/assets/img/table-img-7.png" alt="image">
-                <div class="resquest-list-content">
-                    <h2 class="p-name">نعيم اوزول</h2>
-                    <p class="p-mail"> example@gmail.com</p>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex flex-column justify-content-center request-detail">
-                <h2 class="p-name" style="text-align: left;">22-02-2023</h2>
-                <p class="p-mail" style="text-align: left;">6 days ago</p>
-            </div>
-        </div>
+        <!-- Table End -->
 
     </div>
 
@@ -248,26 +210,6 @@ include_once $plugin_path . 'page-templates/layout/header.php';
 
         </div>
     </div>
-
-
-
-
-
-
-    <!-- Footer Start -->
-    <!-- <div class="container-fluid pt-4 px-4">
-                <div class="bg-white rounded-top p-4">
-                    <div class="row">
-                        <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
-                        </div>
-                        <div class="col-12 col-sm-6 text-center text-sm-end">
-                            Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-    <!-- Footer End -->
 </div>
 
 
