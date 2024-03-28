@@ -15,7 +15,7 @@ $orders = wc_get_orders(array(
 <div class="content">
     <div class="top-inner-page-btn">
         <span class="umala-head">الطلبات</span>
-        <button class="text-white">اضف جديد &nbsp; +</button>
+        <!-- <button class="text-white">اضف جديد &nbsp; +</button> -->
     </div>
     <div class="d-flex align-items-center justify-content-between mt-4 flex-wrap">
         <div>
@@ -172,8 +172,8 @@ $orders = wc_get_orders(array(
 
                                         <td class="ejmali"><?= $order_total; ?> <?= get_woocommerce_currency_symbol(); ?></td>
                                         <td>
-                                            <a href="#">Edit</a>|
-                                            <a href="#">Delete</a>
+                                            <a href="#"><i class="bi bi-pencil-square edit"></i></a>
+                                            <a href="#"><i class="bi bi-trash-fill ms-3 delete"></i></a>
                                         </td>
                                     </tr>
                                 <?php endforeach;
@@ -191,7 +191,7 @@ $orders = wc_get_orders(array(
 
 
     <div class="drop-main d-flex align-items-baseline justify-content-between mt-4 flex-wrap">
-        <div class="top-dropdown d-flex align-items-center gap-2 flex-wrap">
+        <!-- <div class="top-dropdown d-flex align-items-center gap-2 flex-wrap">
             <div class="dropdown">
                 <button class="btn btn-drop dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-chevron-down ms-2" style="font-size: 12px; color: white;"></i>العمل بالجملة</button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -200,7 +200,7 @@ $orders = wc_get_orders(array(
                 </ul>
             </div>
             <button class="simple-btn">يتقدم</button>
-        </div>
+        </div> -->
         <div class="product-left-btn d-flex align-items-center gap-4">
             <span class="text-white"><a href="#"> <img class="ms-2" src="<?php echo $plugin_url ?>includes/assets/img/right-arrow.png" alt=""></a>
                 التالي</span>

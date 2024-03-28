@@ -2005,6 +2005,40 @@ body {
 
 }
 
+/* profile logout popup css by mubin 22 March end */
+
+/* css by wahab 26 March 2024 4:33pm start*/
+td a i.delete{
+    color: #EB512D;
+    font-size: 17px;
+    cursor: pointer;
+}
+td a i.edit{
+    color: #34A853;
+    font-size: 17px;
+}
+.export-btn{
+  background-color: #8d4fcc;
+     border: 1px solid #8d4fcc;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+    font-size: 16px;
+}
+.export-btn:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+    font-size: 16px;
+}
+.client-count{
+  color: #fff;
+  font-size: 16px;
+}
+/* css by wahab 26 March 2024 end */
+=======
 .plugin-data {
     display: flex;
 }
