@@ -8,20 +8,14 @@ $customers = get_users(array('role' => 'customer'));
 <!-- Content Start -->
 <div class="content">
     <div class="top-inner-page-btn">
-        <span class="umala-head">عملاء</span>
-        <!-- <button>اضف جديد &nbsp; +</button> -->
+        <span class="umala-head">عملاء</span><br>
+        <span class="client-count">إجمالي العملاء (<?php echo count($customers); ?>)</span>
     </div>
     <div class="d-flex align-items-center justify-content-between mt-4 flex-wrap">
-        <div class="dropdown">
-            <button class="btn btn-drop dropdown-toggle text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> إجمالي العملاء (<?php echo count($customers); ?>)</button>
-        </div>
-        <button id="exportCustomersButton">Export Customers</button>
+            <button id="exportCustomersButton" class="export-btn">Export Customers</button>
         <div class="top-search">
-            <!-- <form id="customerSearchForm"> -->
             <input type="search" class="form-control" placeholder="ابحث هنا..." id="customerSearchInput">
             <i class="bi bi-search"></i>
-
-            <!-- </form> -->
         </div>
     </div>
     <!-- Table Start -->
