@@ -129,6 +129,8 @@ wp_reset_postdata();
                             $tags = get_the_terms($product->ID, 'product_tag');
                             $categories = get_the_terms($product->ID, 'product_cat');
 
+
+
                             // Get the featured image ID
                             $image_id = get_post_thumbnail_id($product->ID);
 
@@ -137,8 +139,8 @@ wp_reset_postdata();
                             // Get the image URL
                             $image_url = wp_get_attachment_image_src($image_id, 'full');
                             // echo '<pre>';
-                            // print_r($image_url);
-                            // die();
+                            // print_r($categories);
+                          // die();
                             // Get the product object
                             $product_obj = wc_get_product($product->ID);
 
