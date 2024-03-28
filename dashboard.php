@@ -22,8 +22,5 @@ include_once (DASHBOARD_PLUGIN . 'includes/create-pages.php');
 include_once (DASHBOARD_PLUGIN . 'includes/assets.php');
 include_once (DASHBOARD_PLUGIN . 'includes/templates.php');
 include_once (DASHBOARD_PLUGIN . 'includes/pages-hide.php');
+include_once(DASHBOARD_PLUGIN . 'includes/ajax.php');
 include_once (DASHBOARD_PLUGIN . 'includes/custom-attribute.php');
-
-
-// AJAX Handler
-

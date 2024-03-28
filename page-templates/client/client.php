@@ -15,9 +15,13 @@ $customers = get_users(array('role' => 'customer'));
         <div class="dropdown">
             <button class="btn btn-drop dropdown-toggle text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> إجمالي العملاء (<?php echo count($customers); ?>)</button>
         </div>
+        <button id="exportCustomersButton">Export Customers</button>
         <div class="top-search">
-            <input type="search" class="form-control" placeholder="ابحث هنا...">
+            <!-- <form id="customerSearchForm"> -->
+            <input type="search" class="form-control" placeholder="ابحث هنا..." id="customerSearchInput">
             <i class="bi bi-search"></i>
+
+            <!-- </form> -->
         </div>
     </div>
     <!-- Table Start -->
@@ -34,7 +38,7 @@ $customers = get_users(array('role' => 'customer'));
                             <th scope="col">طلبات</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="customerSearchResults">
                         <?php
                         if ($customers) :
                             foreach ($customers as $customer) :
@@ -52,8 +56,9 @@ $customers = get_users(array('role' => 'customer'));
                                     <td> <?= $last_date; ?></td>
                                     <td class="talab"><?= $order_count; ?></td>
                                 </tr>
-                            <?php endforeach; else: ?>
-                                <p>No Customer Data Available!</p>
+                            <?php endforeach;
+                        else : ?>
+                            <h4 style="text-align:center; color:white;">No Customer Data Available!</h4>
                         <?php endif; ?>
                     </tbody>
                 </table>

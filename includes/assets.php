@@ -20,11 +20,14 @@ function enqueue_frontend_styles()
 
     wp_enqueue_script('main', plugins_url('assets/js/main.js', __FILE__), array('jquery'), '1.0.0', true);
 
-
-
     wp_enqueue_script('custom-attributes-script', plugins_url('assets/js/custom_attribute.js', __FILE__), array('jquery'), '1.0.0', true);
 
     // Localize script with AJAX URL
     wp_localize_script('custom-attributes-script', 'custom_attributes_ajax_object', array('ajaxurl' => admin_url('admin-ajax.php')));
+  
+    wp_enqueue_script('custom-scripts', plugins_url('assets/js/custom-scripts.js', __FILE__), array('jquery'), '1.0.0', true);
+    wp_localize_script('custom-scripts','custom_ajax_object',array('ajaxurl' => admin_url('admin-ajax.php')));
+    
+
 }
 
