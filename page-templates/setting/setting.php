@@ -1,5 +1,6 @@
 <?php
 include_once $plugin_path . 'page-templates/layout/header.php';
+
 ?>
 
 <!-- Content Start -->

@@ -2,7 +2,7 @@
 /*
 Plugin Name: Custom Dashboard Multisites
 Description: Custom dashboard functionality for WordPress Multisite.
-Version: 1.0
+Version: 1.0.0
 Author: LEADconcept
 */
 
