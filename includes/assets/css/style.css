@@ -1939,39 +1939,6 @@ body {
     text-align: center;
 }
 
-/* profile logout popup css by mubin 22 March end */
-
-/* css by wahab 26 March 2024 4:33pm start*/
-td a i.delete{
-    color: #EB512D;
-    font-size: 17px;
-    cursor: pointer;
-}
-td a i.edit{
-    color: #34A853;
-    font-size: 17px;
-}
-.export-btn{
-  background-color: #8d4fcc;
-     border: 1px solid #8d4fcc;
-    border-radius: 5px;
-    padding: 8px;
-    color: white;
-    font-size: 16px;
-}
-.export-btn:hover{
-    background-color: transparent;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    padding: 8px;
-    color: white;
-    font-size: 16px;
-}
-.client-count{
-  color: #fff;
-  font-size: 16px;
-}
-/* css by wahab 26 March 2024 end */
 .media-library-page td img {
     width: 100px;
     height: 100px;
@@ -2038,6 +2005,40 @@ td a i.edit{
 
 }
 
+/* profile logout popup css by mubin 22 March end */
+
+/* css by wahab 26 March 2024 4:33pm start*/
+td a i.delete{
+    color: #EB512D;
+    font-size: 17px;
+    cursor: pointer;
+}
+td a i.edit{
+    color: #34A853;
+    font-size: 17px;
+}
+.export-btn{
+  background-color: #8d4fcc;
+     border: 1px solid #8d4fcc;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+    font-size: 16px;
+}
+.export-btn:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+    font-size: 16px;
+}
+.client-count{
+  color: #fff;
+  font-size: 16px;
+}
+/* css by wahab 26 March 2024 end */
+=======
 .plugin-data {
     display: flex;
 }
@@ -2717,98 +2718,3 @@ td a i.edit{
 
 
 /* select dropdown end */
-
-/* medias pasge styling */
-
-.mideas-image-sec{
-    width: 100%;
-    height: 140px;
-    cursor: pointer;
-}
-
-.mideas-image-sec img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.medias-tabs-sec {
-    justify-content: center;
-    justify-content: flex-start;
-    align-items: center !important;
-    padding-right: 0;
-    border-bottom: 2px solid rgba(143, 56, 243, 1);
-}
-.nav-medias .active {
-    color: #fff;
-    background-color: #8D4FCC;
-}
-.media-tabs-btn {
-    align-items: center;
-    background-color: transparent;
-    font-size: 12px;
-    font-family: 'Almarai', sans-serif;
-    font-weight: 400;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px 10px 0 0 !important;
-    border: 1px solid #8D4FCC !important;
-}
-
-.media-tabs-btn:hover{
-    color: #fff;
-    background-color: #8D4FCC;
-    transition: 0.5s;
-}
-
-
-@media (max-width: 575px) {
-    .mobile-boxs{
-        border: 1px solid #8D4FCC;
-        padding: 16px 0;
-        margin: 15px 0;
-        border-radius: 8px;
-    }
-}
-
-.modal-sec .modal-left-content .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
-    width: 100% !important
-}
-
-.bootstrap-select>.dropdown-toggle.bs-placeholder, .bootstrap-select>.dropdown-toggle.bs-placeholder:active, .bootstrap-select>.dropdown-toggle.bs-placeholder:focus, .bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
-    /* color: #999; */
-    background: #5A5A5A;
-}
-
-.modal-sec .modal-left-content light.dropdown-toggle {
-    color: #000;
-    background-color: #5A5A5A !important;
-
-}
-
-.modal-sec .modal-left-content .bootstrap-select>.dropdown-toggle.bs-placeholder, .bootstrap-select>.dropdown-toggle.bs-placeholder:active, .bootstrap-select>.dropdown-toggle.bs-placeholder:focus, .bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
-    color: white !important;
-}
-
-.modal-sec .modal-left-content .btn-light {
-    color: white;
-    background-color: #5A5A5A !important;
-    border: 2px solid #8D4FCC !important;
-    padding: .375rem 1.75rem !important;
-}
-.bs-searchbox .form-control {
-    color: black !important;
-    border: 2px solid #8D4FCC !important;
-}
-
-/* .bootstrap-select>.dropdown-toggle {
-    white-space: break-spaces !important;
-} */
-
-.modal-sec .modal-left-content .filter-option-inner-inner{
-    text-align: right;
-}
-
-.modal-sec .modal-left-content .dropup .dropdown-toggle::after {
-display: none !important;
-}
