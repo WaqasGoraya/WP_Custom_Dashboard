@@ -10,3 +10,4 @@ $coupon = (is_page('admin/coupon')) ? 'active' : '';
 $client = (is_page('admin/clients')) ? 'active' : '';
 $support = (is_page('admin/support')) ? 'active' : '';
 $pages = (is_page('admin/pages')) ? 'active' : '';
+$media = (is_page('media')) ? 'active' : '';

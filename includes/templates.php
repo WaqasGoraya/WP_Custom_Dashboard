@@ -33,6 +33,8 @@ function custom_template_plugin_page_template($template)
         'coupon' => 'coupon/coupon.php',
         //analytics
         'analytics' => 'analytics/analytics.php',
+        //media
+        'media' => 'media/media.php',
 
     );
 
