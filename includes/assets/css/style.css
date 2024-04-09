@@ -36,8 +36,8 @@
 }
 
 /* .btn-top {
-    background: #8d4fcc;
-    border-color: #8d4fcc;
+    background: #35ebaa;
+    border-color: #35ebaa;
     color: #fff;
 } */
 
@@ -109,7 +109,7 @@ body {
 }
 
 .profile-sec-menu {
-    background: #8D4FCC;
+    background: #35ebaa;
     border-radius: 6px 6px 0 0;
 }
 
@@ -171,7 +171,7 @@ body {
 
 .sidebar .navbar .navbar-nav::-webkit-scrollbar-thumb:vertical {
     height: 50px;
-    background-color: #8d4fcc;
+    background-color: #35ebaa;
     -webkit-border-radius: 3px;
 }
 
@@ -333,7 +333,7 @@ body {
     left: 0;
     top: -20px;
     background: #000;
-    background: radial-gradient(circle at 20px 20px, transparent 20px, #a879d8 21px);
+    background: radial-gradient(circle at 20px 20px, transparent 20px, #35ebaa 21px);
     transform: rotate(-90deg)
 }
 
@@ -345,7 +345,7 @@ body {
     left: 0;
     bottom: -20px;
     background: #000;
-    background: radial-gradient(circle at 20px 20px, transparent 20px, #8d4fcc 21px);
+    background: radial-gradient(circle at 20px 20px, transparent 20px, #35ebaa 21px);
 }
 
 .sidebar .navbar .navbar-nav .nav-link.active {
@@ -355,8 +355,8 @@ body {
 .sidebar .navbar .navbar-nav .nav-link:hover,
 .sidebar .navbar .navbar-nav .nav-link.active {
     color: var(--white);
-    background: #8D4FCC;
-    border-color: #8D4FCC;
+    background: #35ebaa;
+    border-color: #35ebaa;
 }
 
 .sidebar .navbar .navbar-nav .nav-link i {
@@ -548,7 +548,7 @@ body {
 }
 
 .stat-card .btn-drop {
-    background: #8D4FCC;
+    background: #35ebaa;
     color: #fff;
 }
 
@@ -791,18 +791,18 @@ body {
 }
 
 .sales-chart-bg .progress .progress-bar {
-    background: linear-gradient(90deg, #782C96 0%, #3380FF 100%);
+    background: linear-gradient(90deg, #35ebaa 0%, #3380FF 100%);
 }
 
 .sales-chart-bg .progress.progress-2 {
     direction: rtl;
     margin-top: 10px;
     height: 0.5rem;
-    background: #30243d;
+    background: #386555;
 }
 
 .sales-chart-bg .progress.progress-2 .progress-bar {
-    background: #8D4FCC;
+    background: #35ebaa;
 }
 
 .sales-chart-bg #chart {
@@ -812,6 +812,7 @@ body {
 .sales-chart-bg .apexcharts-legend-text {
     color: #fff !important;
 }
+
 
 .sales-chart-bg th {
     color: #fff;
@@ -845,35 +846,35 @@ body {
 .sales-chart-bg .doughnut-content .rep-line1 {
     width: 90px;
     height: 2px;
-    background: #8d4fcc;
+    background: #35ebaa;
     display: inline-block;
 }
 
 .sales-chart-bg .doughnut-content .rep-line2 {
     width: 90px;
     height: 2px;
-    background: #543674;
+    background: #35ebaa;
     display: inline-block;
 }
 
 .sales-chart-bg .doughnut-content .rep-line3 {
     width: 90px;
     height: 2px;
-    background: #382c45;
+    background: #35ebaa;
     display: inline-block;
 }
 
 .sales-chart-bg .doughnut-content .rep-line4 {
     width: 30px;
     height: 2px;
-    background: #382c45;
+    background: #35ebaa;
     display: inline-block;
 }
 
 .sales-chart-bg .doughnut-content .rep-line5 {
     width: 30px;
     height: 2px;
-    background: #8D4FCC;
+    background: #35ebaa;
     display: inline-block;
 }
 
@@ -957,7 +958,7 @@ body {
 }
 
 .profile .profile-menu .bg-menu {
-    background: #8d4fcc;
+    background: #35ebaa;
 }
 
 .profile .profile-menu .main-img-user img {
@@ -997,7 +998,7 @@ body {
 .top-inner-page-btn button {
     padding: 3px 20px;
     background: none;
-    border: 2px solid #472561;
+    border: 2px solid #35ebaa;
     border-radius: 10px;
     color: #948E92;
     margin-right: 15px;
@@ -1036,7 +1037,7 @@ body {
 }
 
 .content .top-dropdown .btn-drop {
-    border: 2px solid #472561;
+    border: 2px solid #35ebaa;
     color: white;
     padding: 5px 15px;
     border-radius: 10px;
@@ -1197,7 +1198,7 @@ body {
 .top-inner-page-btn button {
     padding: 3px 20px;
     background: none;
-    border: 2px solid #472561;
+    border: 2px solid #35ebaa;
     border-radius: 10px;
     color: #948E92;
     margin-right: 15px;
@@ -1236,7 +1237,7 @@ body {
 }
 
 .content .top-dropdown .btn-drop {
-    border: 2px solid #472561;
+    border: 2px solid #35ebaa;
     color: white;
     padding: 5px 15px;
     border-radius: 10px;
@@ -1389,7 +1390,7 @@ body {
 .top-inner-page-btn button {
     padding: 3px 20px;
     background: none;
-    border: 2px solid #472561;
+    border: 2px solid #35ebaa;
     border-radius: 10px;
     color: #948E92;
     margin-right: 15px;
@@ -1428,7 +1429,7 @@ body {
 }
 
 .content .top-dropdown .btn-drop {
-    border: 2px solid #472561;
+    border: 2px solid #35ebaa;
     color: white;
     padding: 5px 15px;
     border-radius: 10px;
@@ -1918,14 +1919,14 @@ body {
 }
 
 .top-dropdown .btn-drop-unique {
-    border: 2px solid #472561;
+    border: 2px solid #35ebaa;
     color: white;
     padding: 0px 10px;
     border-radius: 10px;
 }
 
 .top-dropdown .drop-m {
-    border-right: 2px solid #472561;
+    border-right: 2px solid #35ebaa;
     padding: 10px 10px 10px 0;
 }
 
@@ -2008,24 +2009,27 @@ body {
 /* profile logout popup css by mubin 22 March end */
 
 /* css by wahab 26 March 2024 4:33pm start*/
-td a i.delete{
+td a i.delete {
     color: #EB512D;
     font-size: 17px;
     cursor: pointer;
 }
-td a i.edit{
+
+td a i.edit {
     color: #34A853;
     font-size: 17px;
 }
-.export-btn{
-  background-color: #8d4fcc;
-     border: 1px solid #8d4fcc;
+
+.export-btn {
+    background-color: #35ebaa;
+    border: 1px solid #35ebaa;
     border-radius: 5px;
     padding: 8px;
     color: white;
     font-size: 16px;
 }
-.export-btn:hover{
+
+.export-btn:hover {
     background-color: transparent;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -2033,13 +2037,14 @@ td a i.edit{
     color: white;
     font-size: 16px;
 }
-.client-count{
-  color: #fff;
-  font-size: 16px;
+
+.client-count {
+    color: #fff;
+    font-size: 16px;
 }
+
 /* css by wahab 26 March 2024 end */
-=======
-.plugin-data {
+=======.plugin-data {
     display: flex;
 }
 
@@ -2163,7 +2168,7 @@ td a i.edit{
 @media (max-width: 520px) {
 
     .plugin-tabs {
-        /* border: 1px solid #8D4FCC; */
+        /* border: 1px solid #35ebaa; */
         background-color: #1A1A1A;
         border-radius: 10px;
         justify-content: center;
@@ -2189,7 +2194,7 @@ td a i.edit{
         color: white;
         padding: 05px 10px !important;
         border-radius: 10px !important;
-        border: 1px solid #8D4FCC !important;
+        border: 1px solid #35ebaa !important;
         margin-bottom: 10px;
 
     }
@@ -2200,7 +2205,7 @@ td a i.edit{
 
 
 .plugin-tabs {
-    /* border: 1px solid #8D4FCC; */
+    /* border: 1px solid #35ebaa; */
     background-color: #1A1A1A;
     border-radius: 10px;
     justify-content: center;
@@ -2225,13 +2230,13 @@ td a i.edit{
     color: white;
     padding: 10px 20px;
     border-radius: 10px !important;
-    border: 1px solid #8D4FCC !important;
+    border: 1px solid #35ebaa !important;
 
 }
 
 .plugin-tabs-bt:hover {
     align-items: center;
-    background-color: #8D4FCC;
+    background-color: #35ebaa;
     font-family: 'Almarai', sans-serif;
     color: white;
     border: none;
@@ -2307,14 +2312,14 @@ td a i.edit{
 }
 
 .form-btn {
-    background: #8d4fcc;
-    border-color: #8d4fcc;
+    background: #35ebaa;
+    border-color: #35ebaa;
     color: #fff;
 }
 
 
 .file-input-container {
-    background: #8D4FCC;
+    background: #35ebaa;
     position: relative;
     overflow: hidden;
     display: inline-block;
@@ -2593,7 +2598,7 @@ td a i.edit{
 
 .product-edit-page .product-edits {
     font-size: 15px;
-    color: #8D4FCC;
+    color: #35ebaa;
     background: white;
     border-radius: 50%;
     padding: 4px 8px;
