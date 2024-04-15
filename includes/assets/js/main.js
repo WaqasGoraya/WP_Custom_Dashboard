@@ -1,11 +1,11 @@
 (function ($) {
   "use strict";
   // Sidebar Toggler
-  $('.sidebar-toggler').click(function () {
-    $('.sidebar, .content').toggleClass("open");
+  $(".sidebar-toggler").click(function () {
+    $(".sidebar, .content").toggleClass("open");
     $(this).toggleClass("sidebar-toggler-rotate");
-    $('.sidebar .navbar-nav').toggleClass("sidebar-lg-styles");
-    $('.sidebar .navbar-nav').toggleClass("sidebar-sm-styles");
+    $(".sidebar .navbar-nav").toggleClass("sidebar-lg-styles");
+    $(".sidebar .navbar-nav").toggleClass("sidebar-sm-styles");
     return false;
   });
 })(jQuery);
@@ -13,15 +13,14 @@
 // Dropdown Toggle
 (function ($) {
   "use strict";
-  $('.profile img.rounded-circle').click(function () {
-    $(this).parent('.profile').toggleClass("show");
+  $(".profile img.rounded-circle").click(function () {
+    $(this).parent(".profile").toggleClass("show");
     return false;
   });
 })(jQuery);
 
-
 // Line Chart
-const lc = document.getElementById('line-chart');
+const lc = document.getElementById("line-chart");
 let chartWidth; // Variable to store the chart instance
 
 function updateChartAspectRatio() {
@@ -35,166 +34,164 @@ function updateChartAspectRatio() {
 }
 
 chartWidth = new Chart(lc, {
-  type: 'line',
+  type: "line",
   data: {
     labels: [1500, 1600, 1700, 1750, 1800, 1850, 1900, 1950, 1999, 2050],
-    datasets: [{
-      data: [3000, 2000, 3000, 2000, 107, 111, 133, 221, 783, 2478],
-      fill: false,
-      borderColor: '#875CFF',
-      tension: 0.4
-    },
-    {
-      data: [282, 350, 411, 502, 635, 809, 947, 1402, 3700, 5267],
-      fill: false,
-      borderColor: '#FF4D00',
-      tension: 0.4
-    },
-    {
-      data: [168, 170, 178, 190, 203, 276, 408, 547, 675, 734],
-      fill: false,
-      borderColor: '#FFA800',
-      tension: 0.4
-    }
-    ]
+    datasets: [
+      {
+        data: [3000, 2000, 3000, 2000, 107, 111, 133, 221, 783, 2478],
+        fill: false,
+        borderColor: "#875CFF",
+        tension: 0.4,
+      },
+      {
+        data: [282, 350, 411, 502, 635, 809, 947, 1402, 3700, 5267],
+        fill: false,
+        borderColor: "#FF4D00",
+        tension: 0.4,
+      },
+      {
+        data: [168, 170, 178, 190, 203, 276, 408, 547, 675, 734],
+        fill: false,
+        borderColor: "#FFA800",
+        tension: 0.4,
+      },
+    ],
   },
   options: {
     scales: {
       y: {
         display: false,
-        beginAtZero: true
+        beginAtZero: true,
       },
       x: {
         display: false,
-      }
+      },
     },
     plugins: {
       legend: {
-        display: false
-      }
+        display: false,
+      },
     },
     maintainAspectRatio: false,
     // aspectRatio: 1|4,
-    pointBackgroundColor: '#fff',
-    pointBorderColor: '#fff'
-  }
+    pointBackgroundColor: "#fff",
+    pointBorderColor: "#fff",
+  },
 });
-window.addEventListener('resize', updateChartAspectRatio);
+window.addEventListener("resize", updateChartAspectRatio);
 
 // Bar Chart
-const ctx = document.getElementById('bar-chart');
+const ctx = document.getElementById("bar-chart");
 
 new Chart(ctx, {
-  type: 'bar',
+  type: "bar",
   data: {
-    labels: ['', ''],
-    datasets: [{
-      label: '',
-      backgroundColor: ["#8D4FCC", "#782C96"],
-      data: [80, 20],
-      borderWidth: 1,
-      categoryPercentage: 0,
-      barThickness: 30,
-      borderRadius: 8
-    }]
+    labels: ["", ""],
+    datasets: [
+      {
+        label: "",
+        backgroundColor: ["#8D4FCC", "#782C96"],
+        data: [80, 20],
+        borderWidth: 1,
+        categoryPercentage: 0,
+        barThickness: 30,
+        borderRadius: 8,
+      },
+    ],
   },
   options: {
     scales: {
       y: {
         display: false,
-        beginAtZero: true
-      }
+        beginAtZero: true,
+      },
     },
     plugins: {
       legend: {
-        display: false
-      }
+        display: false,
+      },
     },
     maintainAspectRatio: true,
-    aspectRatio: 1 | 1
-  }
+    aspectRatio: 1 | 1,
+  },
 });
 
 // Bar Chart
-const dc = document.getElementById('doughnut-chart');
+const dc = document.getElementById("doughnut-chart");
 
 new Chart(dc, {
-  type: 'doughnut',
+  type: "doughnut",
   data: {
-    labels: [''],
-    datasets: [{
-      label: 'lab',
-      data: [80, 20],
-      backgroundColor: [
-        '#9181DB',
-        'transparent'
-      ],
-      borderWidth: 0,
-      hoverOffset: 4,
-      rotation: -20
-    },
-    {
-      label: '',
-      data: [60, 40],
-      backgroundColor: [
-        '#01B7C5',
-        'transparent',
-      ],
-      borderWidth: 0,
-      hoverOffset: 4,
-      rotation: -20
-    },
-    {
-      label: '',
-      data: [40, 60],
-      backgroundColor: [
-        '#782C96',
-        'transparent',
-      ],
-      borderWidth: 0,
-      hoverOffset: 4,
-      rotation: -20
-    }]
+    labels: [""],
+    datasets: [
+      {
+        label: "lab",
+        data: [80, 20],
+        backgroundColor: ["#9181DB", "transparent"],
+        borderWidth: 0,
+        hoverOffset: 4,
+        rotation: -20,
+      },
+      {
+        label: "",
+        data: [60, 40],
+        backgroundColor: ["#01B7C5", "transparent"],
+        borderWidth: 0,
+        hoverOffset: 4,
+        rotation: -20,
+      },
+      {
+        label: "",
+        data: [40, 60],
+        backgroundColor: ["#782C96", "transparent"],
+        borderWidth: 0,
+        hoverOffset: 4,
+        rotation: -20,
+      },
+    ],
   },
   options: {
     scales: {
       y: {
         display: false,
-        beginAtZero: true
-      }
+        beginAtZero: true,
+      },
     },
     plugins: {
       legend: {
-        display: false
-      }
+        display: false,
+      },
     },
     maintainAspectRatio: true,
-    aspectRatio: 1 | 1
-  }
+    aspectRatio: 1 | 1,
+  },
 });
 
-const rc = document.getElementById('doughnut-chart2');
+const rc = document.getElementById("doughnut-chart2");
 
 new Chart(rc, {
-  type: 'doughnut',
+  type: "doughnut",
   data: {
-    labels: ['Red', 'Blue', 'Yellow'],
-    datasets: [{
-      label: 'My First Dataset',
-      data: [300, 50, 100],
-      backgroundColor: ['#8d4fcc', '#382c45', '#543674'],
-      borderWidth: 0,
-      borderJoinStyle: 'round',
-      borderRadius: 10,
-      hoverOffset: 4,
-      spacing: 4
-    }]
+    labels: ["Red", "Blue", "Yellow"],
+    datasets: [
+      {
+        label: "My First Dataset",
+        data: [300, 50, 100],
+        backgroundColor: ["#8d4fcc", "#382c45", "#543674"],
+        borderWidth: 0,
+        borderJoinStyle: "round",
+        borderRadius: 10,
+        hoverOffset: 4,
+        spacing: 4,
+      },
+    ],
   },
   options: {
     plugins: {
       legend: {
-        display: false
-      }
+        display: false,
+      },
     },
     aspectRatio: 1 | 1,
     maintainAspectRatio: true,
@@ -203,29 +200,27 @@ new Chart(rc, {
         top: 20,
         bottom: 20,
         left: 20,
-        right: 20
-      }
+        right: 20,
+      },
     },
-    cutout: '80%',
+    cutout: "80%",
     scales: {
       y: {
-        display: false
-      }
-    }
-  }
+        display: false,
+      },
+    },
+  },
 });
-
-
 
 /*--- Apex (#spark6) ---*/
 var spark6 = {
   chart: {
-    id: 'spark6',
-    type: 'area',
+    id: "spark6",
+    type: "area",
     height: 30,
-    responsive: 'true',
+    responsive: "true",
     sparkline: {
-      enabled: true
+      enabled: true,
     },
     dropShadow: {
       enabled: false,
@@ -233,139 +228,165 @@ var spark6 = {
       left: 1,
       blur: 1,
       opacity: 0.1,
-    }
+    },
   },
-  series: [{
-    data: [25, 66, 41, 59, 25, 44, 12, 36, 9, 21, 25, 66, 41, 59, 25, 44, 12, 36, 9, 21]
-  }],
+  series: [
+    {
+      data: [
+        25, 66, 41, 59, 25, 44, 12, 36, 9, 21, 25, 66, 41, 59, 25, 44, 12, 36,
+        9, 21,
+      ],
+    },
+  ],
   stroke: {
-    curve: 'smooth'
+    curve: "smooth",
   },
   markers: {
-    size: 0
+    size: 0,
   },
   grid: {
     padding: {
       top: 10,
       bottom: 0,
-      left: 0
-    }
+      left: 0,
+    },
   },
   // colors: ['#FFB849','#782C96'],
   stroke: {
     width: 2,
   },
   fill: {
-    type: 'gradient',
+    type: "gradient",
     gradient: {
-      shade: 'dark',
-      gradientToColors: ['rgba(123, 113, 240, 0)'],
+      shade: "dark",
+      gradientToColors: ["rgba(123, 113, 240, 0)"],
       shadeIntensity: 1,
-      type: 'vertical',
+      type: "vertical",
       opacityFrom: 1,
       opacityTo: 1,
-      stops: [0, 100, 100, 100]
+      stops: [0, 100, 100, 100],
     },
   },
   tooltip: {
     x: {
       show: false,
       width: 1,
-    }
-  }
-}
+    },
+  },
+};
 
-const weeklyUpdates = document.getElementById('weekly-updates');
+const weeklyUpdates = document.getElementById("weekly-updates");
 
 new Chart(weeklyUpdates, {
-  type: 'bar',
+  type: "bar",
   data: {
-    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-    datasets: [{
-      label: '',
-      backgroundColor: ["#f78c0e", "#ef6d94", "#f2a501", "#7bbf30", "#ff701e", "#b2b2b2"],
-      data: [80, 20, 30, 40, 10, 60],
-      borderWidth: 1,
-      categoryPercentage: 0,
-      barThickness: 30,
-      borderRadius: 8
-    }]
+    labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    datasets: [
+      {
+        label: "",
+        backgroundColor: [
+          "#f78c0e",
+          "#ef6d94",
+          "#f2a501",
+          "#7bbf30",
+          "#ff701e",
+          "#b2b2b2",
+        ],
+        data: [80, 20, 30, 40, 10, 60],
+        borderWidth: 1,
+        categoryPercentage: 0,
+        barThickness: 30,
+        borderRadius: 8,
+      },
+    ],
   },
   options: {
     scales: {
       y: {
         display: false,
-        beginAtZero: true
-      }
+        beginAtZero: true,
+      },
     },
     plugins: {
       legend: {
-        display: false
-      }
+        display: false,
+      },
     },
     maintainAspectRatio: true,
-    aspectRatio: 1 | 2
-  }
+    aspectRatio: 1 | 2,
+  },
 });
-
-
-
-
 
 //  Analytics page scale start
 
-const recentOrders = document.getElementById('recent-orders');
+const recentOrders = document.getElementById("recent-orders");
 
 new Chart(recentOrders, {
-  type: 'bar',
+  type: "bar",
   data: {
-    labels: ['أسبوع32', 'أسبوع28', 'أسبوع24', 'أسبوع20', 'أسبوع16', 'أسبوع12', 'أسبوع8', 'أسبوع4', 'أسبوع1',],
-    datasets: [{
-      label: '',
-      backgroundColor: ["#8D4FCC", "#8D4FCC", "#8D4FCC", "#8D4FCC", "#8D4FCC", "#8D4FCC", "#8D4FCC", "#8D4FCC", "#8D4FCC"],
-      data: [90, 80, 70, 60, 50, 40, 30, 20, 10],
-      borderWidth: 1,
-      categoryPercentage: 0,
-      barThickness: 70,
-      borderRadius: 10,
-    }]
+    labels: [
+      "أسبوع32",
+      "أسبوع28",
+      "أسبوع24",
+      "أسبوع20",
+      "أسبوع16",
+      "أسبوع12",
+      "أسبوع8",
+      "أسبوع4",
+      "أسبوع1",
+    ],
+    datasets: [
+      {
+        label: "",
+        backgroundColor: [
+          "#8D4FCC",
+          "#8D4FCC",
+          "#8D4FCC",
+          "#8D4FCC",
+          "#8D4FCC",
+          "#8D4FCC",
+          "#8D4FCC",
+          "#8D4FCC",
+          "#8D4FCC",
+        ],
+        data: [90, 80, 70, 60, 50, 40, 30, 20, 10],
+        borderWidth: 1,
+        categoryPercentage: 0,
+        barThickness: 70,
+        borderRadius: 10,
+      },
+    ],
   },
   options: {
     scales: {
       y: {
         display: false,
-        beginAtZero: true
-      }
+        beginAtZero: true,
+      },
     },
     plugins: {
       legend: {
-        display: false
-      }
+        display: false,
+      },
     },
     maintainAspectRatio: true,
-    aspectRatio: 1 | 2
-  }
+    aspectRatio: 1 | 2,
+  },
 });
 
 //  Analytics page scale End
-
-
-
-
-
-
 
 /*--- Apex (#spark6) Closed ---*/
 
 /*--- Apex (#sparkLine) ---*/
 var sparkLine1 = {
   chart: {
-    id: 'sparkLine1',
-    type: 'area',
+    id: "sparkLine1",
+    type: "area",
     height: 100,
-    responsive: 'true',
+    responsive: "true",
     sparkline: {
-      enabled: true
+      enabled: true,
     },
     dropShadow: {
       enabled: false,
@@ -373,84 +394,97 @@ var sparkLine1 = {
       left: 1,
       blur: 1,
       opacity: 0.1,
-    }
+    },
   },
-  series: [{
-    name: 'series 1',
-    data: [231, 40, 28, 51, 42, 109, 100]
-  },
-  {
-    name: 'series 2',
-    data: [11, 32, 45, 32, 34, 52, 41]
-  }],
+  series: [
+    {
+      name: "series 1",
+      data: [231, 40, 28, 51, 42, 109, 100],
+    },
+    {
+      name: "series 2",
+      data: [11, 32, 45, 32, 34, 52, 41],
+    },
+  ],
   stroke: {
-    curve: 'smooth',
-    width: 2
+    curve: "smooth",
+    width: 2,
   },
   xaxis: {
-    type: 'datetime',
-    categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+    type: "datetime",
+    categories: [
+      "2018-09-19T00:00:00.000Z",
+      "2018-09-19T01:30:00.000Z",
+      "2018-09-19T02:30:00.000Z",
+      "2018-09-19T03:30:00.000Z",
+      "2018-09-19T04:30:00.000Z",
+      "2018-09-19T05:30:00.000Z",
+      "2018-09-19T06:30:00.000Z",
+    ],
   },
   tooltip: {
     x: {
-      format: 'dd/MM/yy HH:mm'
-    }
-  }
-}
+      format: "dd/MM/yy HH:mm",
+    },
+  },
+};
 /*--- Apex (#sparkLine) Closed ---*/
 var options = {
-  series: [{
-    name: 'This Month',
-    type: 'area',
-    data: [44, 55, 31, 47, 31, 43, 26, 41, 31, 47, 33]
-  }, {
-    name: 'Last Month',
-    type: 'line',
-    data: [55, 69, 45, 61, 43, 54, 37, 52, 44, 61, 43]
-  }],
+  series: [
+    {
+      name: "This Month",
+      type: "area",
+      data: [44, 55, 31, 47, 31, 43, 26, 41, 31, 47, 33],
+    },
+    {
+      name: "Last Month",
+      type: "line",
+      data: [55, 69, 45, 61, 43, 54, 37, 52, 44, 61, 43],
+    },
+  ],
   chart: {
     height: 350,
-    type: 'line',
+    type: "line",
     toolbar: {
-      show: false
-    }
+      show: false,
+    },
   },
-  colors: ['#4169E1', '#FFBE0A'],
+  colors: ["#4169E1", "#FFBE0A"],
   stroke: {
-    curve: 'smooth',
-    dashArray: [0, 8]
+    curve: "smooth",
+    dashArray: [0, 8],
   },
   fill: {
-    type: 'solid',
+    type: "solid",
     opacity: [0.35, 1],
   },
   labels: [],
   markers: {
-    size: 0
+    size: 0,
   },
   yaxis: [
     {
       labels: {
         style: {
-          colors: '#fff',
-          fontSize: '12px',
-          fontFamily: 'Helvetica, Arial, sans-serif',
+          colors: "#fff",
+          fontSize: "12px",
+          fontFamily: "Helvetica, Arial, sans-serif",
           fontWeight: 400,
-          cssClass: 'apexcharts-yaxis-label',
-        }
-      }
-    }
+          cssClass: "apexcharts-yaxis-label",
+        },
+      },
+    },
   ],
   xaxis: {
     labels: {
       style: {
-        colors: '#fff',
-        fontSize: '12px',
-        fontFamily: 'Helvetica, Arial, sans-serif',
+        colors: "#fff",
+        fontSize: "12px",
+        fontFamily: "Helvetica, Arial, sans-serif",
         fontWeight: 400,
-        cssClass: 'apexcharts-xaxis-label',
-      }
-    }
+        cssClass: "apexcharts-xaxis-label",
+      },
+    },
   },
   tooltip: {
     shared: true,
@@ -461,9 +495,9 @@ var options = {
           return y.toFixed(0) + " points";
         }
         return y;
-      }
-    }
-  }
+      },
+    },
+  },
 };
 
 var chart = new ApexCharts(document.querySelector("#chart"), options);
@@ -471,29 +505,121 @@ chart.render();
 
 new ApexCharts(document.querySelector("#spark6"), spark6).render();
 
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   // Get the dropdown element
-  const dropdown = document.getElementById('inputrole');
+  const dropdown = document.getElementById("inputrole");
   // Get the variant and price sections
-  const variantSection = document.getElementById('variant');
-  const priceSection = document.getElementById('price');
+  const variantSection = document.getElementById("variant");
+  const priceSection = document.getElementById("price");
 
   // Add event listener to the dropdown for change event
-  dropdown.addEventListener('change', () => {
+  dropdown.addEventListener("change", () => {
     // Check the selected option
-    if (dropdown.value === 'منتج متغير') {
+    if (dropdown.value === "منتج متغير") {
       // Show the variant section and hide the price section
-      variantSection.style.display = 'block';
-      priceSection.style.display = 'none';
-    } else if (dropdown.value === 'منتج بسيط') {
+      variantSection.style.display = "block";
+      priceSection.style.display = "none";
+    } else if (dropdown.value === "منتج بسيط") {
       // Show the price section and hide the variant section
-      variantSection.style.display = 'none';
-      priceSection.style.display = 'block';
+      variantSection.style.display = "none";
+      priceSection.style.display = "block";
     }
   });
 });
+
+// jQuery(document).ready(function ($) {
+
+// });
+
+jQuery(document).ready(function () {
+  $(".selectpicker").selectpicker();
+});
+
+// Function to add a new row
+function addRow() {
+  // Create a new row
+  var newRow = document.createElement("div");
+  newRow.classList.add("row", "mobile-boxs", "row-cols-lg-2");
+  newRow.innerHTML = `
+                <div class="col-10 col-sm-5 col-md-5 col-lg-5 mt-3">
+                    <label for="formFileLg" class="user-form-label mb-2">اسم السمة</label>
+                    <div class="data-select position-relative edit-drop full-drop mb-3 num-drop"
+                                                style="border-radius: 5px;">
+                                                <i class="fa fa-chevron-down"
+                                                    style="font-size: 12px; color:rgba(255, 255, 255, 1);"></i>
+                                                <select class="form-select my-select2 user-form-input"
+                                                    style="background-color: #5A5A5A; border: 2px solid rgba(143, 56, 243, 1); border-radius: 5px;">
+                                                    <option selected>Color</option>
+                                                    <option>dafafafa</option>
+                                                    <option>#00000</option>
+                                                    <option>#fffff</option>
+                                                    <option>blue</option>
+                                                    <option>yellow</option>
+                                                </select>
+                                            </div>
+                                          
+                </div>
+                <div class="col-10 col-sm-5 col-md-5 col-lg-5 mt-3">
+                    <label for="formFileLg" class="user-form-label mb-2">قيم</label>
+                    <div class="data-select position-relative edit-drop full-drop mb-3 num-drop"
+                                                style="border-radius: 5px;">
+                                                <i class="fa fa-chevron-down"
+                                                    style="font-size: 12px; color:rgba(255, 255, 255, 1);"></i>
+                                                    <select class="form-select my-select2 user-form-input"
+                                                    style="background-color: #5A5A5A; border: 2px solid rgba(143, 56, 243, 1); border-radius: 5px;">
+                                                    <option selected>Color</option>
+                                                    <option>dafafafa</option>
+                                                    <option>#00000</option>
+                                                    <option>#fffff</option>
+                                                    <option>blue</option>
+                                                    <option>yellow</option>
+                                                </select>
+                                            </div>
+                </div>
+                <div class="col-2 col-sm-2 col-md-2 col-lg-2 d-flex align-items-end mb-4 px-0">         
+                    <button onclick="deleteRow()" type="button" class="delete-row pt-5" style="background: none; border: none; color: rgba(200, 74, 44, 1); font-size: 18px;"><i class="fa fa-trash-alt" aria-hidden="true"></i></button>
+                </div>
+            `;
+
+  // Append the new row after the last row
+  document.querySelector(".modal-left-content").appendChild(newRow);
+
+  // Move the "Add type" button to the bottom of the parent div
+  document
+    .querySelector(".modal-left-content")
+    .appendChild(document.querySelector(".add-row"));
+  document
+    .querySelector(".modal-left-content")
+    .appendChild(document.querySelector(".save-btn"));
+
+  jQuery(document).ready(function () {
+    document.querySelector(".my-select2").select2();
+  });
+}
+
+// Function to delete the row
+function deleteRow(btn) {
+  // Get the parent row of the button to be deleted
+  var rowToDelete = btn.parentNode;
+  // Remove the parent row
+  rowToDelete.parentNode.removeChild(rowToDelete);
+}
+
+// Add event listener for adding rows
+document.querySelector(".add-row").addEventListener("click", addRow);
+
+// Add event listener for deleting rows
+document.addEventListener("click", function (event) {
+  if (event.target.closest(".delete-row")) {
+    deleteRow(event.target.closest(".delete-row").parentNode);
+  }
+});
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   $(".my-select2").each(function () {
+//     $(this).select2({
+//       tags: true,
+//       dropdownParent: $(this).parent(),
+//     });
+//   });
+// });

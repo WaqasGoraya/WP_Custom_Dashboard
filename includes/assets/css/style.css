@@ -50,6 +50,14 @@ body {
     font-size: 16px;
     font-weight: 400;
 }
+*::selection{
+    font-family: 'Almarai', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Almarai', sans-serif;
+}
 
 
 /*** Spinner ***/
@@ -267,6 +275,7 @@ body {
 
     .sidebar .navbar .sidebar-sm-styles .nav-label {
         display: inline-block;
+        color: white !important;
     }
 
     .sidebar .navbar .sidebar-sm-styles .nav-item.nav-link {
@@ -1396,6 +1405,16 @@ body {
     margin-right: 15px;
     font-size: 20px;
     font-weight: 400;
+}
+.top-inner-page-btn a {
+  padding: 7px 20px;
+  background: none;
+  border: 2px solid #472561;
+  border-radius: 10px;
+  color: #948E92;
+  margin-right: 15px;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .top-inner-page-btn .umala-head {
@@ -2723,3 +2742,207 @@ td a i.edit {
 
 
 /* select dropdown end */
+
+
+.modal-sec .modal-content {
+    background: rgba(21, 21, 21, 0.9);
+}
+
+.modal-sec .mod-title span {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.modal-sec .modal-dialog {
+    max-width: 1000px;
+    margin: 1rem 280px 2rem 0;
+}
+
+.modal-sec .modal-left-content {
+    background: rgba(56, 56, 56, 1);
+    padding: 18px;
+    border-radius: 20px;
+}
+
+.modal-sec .modal-left-content p {
+    color: rgba(255, 255, 255, 1);
+}
+
+.modal-sec .modal-left-content .form-control {
+    background: none;
+    border: 0.5px solid;
+    border-radius: 10px;
+    color: white;
+}
+
+.modal-sec .btn-close {
+    box-sizing: content-box;
+    width: 0;
+    height: 0;
+    padding: 0;
+    color: #000;
+    background-image: none;
+    border: 0;
+    opacity: 1;
+}
+
+.modal-sec .btn-close:focus {
+    box-shadow: none;
+}
+
+.modal-sec .modal-header {
+    display: block;
+    padding: 20px 20px 0 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-sec .product-close {
+    font-size: 30px;
+    color: white;
+    background: rebeccapurple;
+    border-radius: 50%;
+    padding: 2px 2px 1px 3px;
+}
+
+
+
+
+
+
+
+
+/* medias pasge styling */
+
+.mideas-image-sec {
+    width: 100%;
+    height: 140px;
+    cursor: pointer;
+}
+
+.mideas-image-sec img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.medias-tabs-sec {
+    justify-content: center;
+    justify-content: flex-start;
+    align-items: center !important;
+    padding-right: 0;
+    border-bottom: 2px solid rgba(143, 56, 243, 1);
+}
+
+.nav-medias .active {
+    color: #fff;
+    background-color: #8D4FCC;
+}
+
+.media-tabs-btn {
+    align-items: center;
+    background-color: transparent;
+    font-size: 12px;
+    font-family: 'Almarai', sans-serif;
+    font-weight: 400;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0 !important;
+    border: 1px solid #8D4FCC !important;
+}
+
+.media-tabs-btn:hover {
+    color: #fff;
+    background-color: #8D4FCC;
+    transition: 0.5s;
+}
+
+
+@media (max-width: 575px) {
+    .mobile-boxs {
+        border: 1px solid #8D4FCC;
+        padding: 16px 0;
+        margin: 15px 0;
+        border-radius: 8px;
+    }
+}
+
+.modal-sec .modal-left-content .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100% !important
+}
+
+.bootstrap-select>.dropdown-toggle.bs-placeholder,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:active,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+    /* color: #999; */
+    background: #5A5A5A;
+}
+
+.modal-sec .modal-left-content light.dropdown-toggle {
+    color: #000;
+    background-color: #5A5A5A !important;
+
+}
+
+.modal-sec .modal-left-content .bootstrap-select>.dropdown-toggle.bs-placeholder,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:active,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+    color: white !important;
+}
+
+.modal-sec .modal-left-content .btn-light {
+    color: white;
+    background-color: #5A5A5A !important;
+    border: 2px solid #8D4FCC !important;
+    padding: .375rem 1.75rem !important;
+}
+
+.bs-searchbox .form-control {
+    color: black !important;
+    border: 2px solid #8D4FCC !important;
+}
+
+/* .bootstrap-select>.dropdown-toggle {
+    white-space: break-spaces !important;
+} */
+
+.modal-sec .modal-left-content .filter-option-inner-inner {
+    text-align: right;
+}
+
+.modal-sec .modal-left-content .dropup .dropdown-toggle::after {
+    display: none !important;
+}
+
+
+select.my-select2{
+    position: relative;
+}
+select.my-select2 option {
+    position: absolute;
+    top: 10%;
+    z-index: 1090 !important;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+
+.select2-container {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    vertical-align: middle;
+    width: 100% !important;
+}
